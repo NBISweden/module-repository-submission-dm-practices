@@ -3,9 +3,9 @@ title: "How to submit to ENA repository"
 teaching: 10
 exercises: 0
 questions:
-- ""
-- ""
-- ""
+- "What is ENA?"
+- "What do I submit to ENA?"
+- "How can I submit?"
 objectives:
 - "Explain the parts of the data model: Study, Sample, Experiment, Run, Analysis."
 - "Explain the different types of submissions."
