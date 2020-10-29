@@ -76,19 +76,25 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 {: .solution}
 
 4. Use the [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) option to register new samples.
+
 > ## Picture
 > ![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
 {: .solution}
+
 * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
 * Click on **Next**
+
 > ## Solution
 > ![select_checklist](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_checklist.jpg)
 {: .solution}
+
 * Add two fields from **Part and developmental stage of organism**: `dev_stage` and `tissue_type`.
 * Click on **Next**
+
 > ## Solution
 > ![add_fields](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/add_fields.jpg)
 {: .solution}
+
 * Fill in all information that is in common for all samples
     * Organism Details - Search for `mouse` and choose `Mus musculus` in the search result.
     * Part and developmental stage of organism - `adult` as `dev_stage` and `lung` as `tissue_type`
