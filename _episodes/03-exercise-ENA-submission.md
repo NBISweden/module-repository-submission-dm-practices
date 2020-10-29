@@ -75,7 +75,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ![register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_study.jpg)
 {: .solution}
 
-### 4. Select [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) 
+### 2. Select [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) 
 > ## Picture
 > ![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
 {: .solution}
@@ -105,7 +105,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 * Click on `+ Add` button and fill the Basic details
     * `Unique name` - a_wt
-    * `Title`- Sample a wildtype
+    * `Title`- Sample A wildtype
 * Click on **Submit**
 
 > ## Solution
@@ -133,6 +133,11 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
     * File Name - a_wt.bam
     * MD5 checksum - 9a7183503166cf772492c7d6581f3b72
 * Click **Submit**
+
+> ## Solution
+> ![submit_reads_1](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_1.jpg)
+> ![submit_reads_2](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_2.jpg)
+{: .solution}
 
 ## Files to submit
 This sequence file (.bam format) needs to be downloaded previous to exercise 
