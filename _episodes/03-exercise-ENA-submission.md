@@ -60,37 +60,27 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 ### New submission
 1. Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra) and log in with your Webin username and password. 
 2. Go to the `New Submission` tab. Each of the options displayed will lead you to interactive web forms that guide you through the submission of these objects. Interactive submission is recommended for registration of your Study and Samples.
-
 ![new_submission_1-2-3](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/new_submission_1-2-3.jpg)
-
 3. Use the [Register study (project)](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) option to register new studies.
-
 ![select_register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_study.jpg)
-
 * **Title**: VEGFR2 Y949F mutation
 * **Abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
 * Click on **Next**
-
 > ## Solution
 > ![register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_study.jpg)
 {: .solution}
-
 4. Use the [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) option to register new samples.
-
 ![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
-
 * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
 * Click on **Next**
 > ## Solution
 > ![select_checklist](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_checklist.jpg)
 {: .solution}
-
 * Add two fields from **Part and developmental stage of organism**: `dev_stage` and `tissue_type`.
 * Click on **Next**
 > ## Solution
 > ![add_fields](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/add_fields.jpg)
 {: .solution}
-
 * Fill in all information that is in common for all samples
     * Organism Details - Search for `mouse` and choose `Mus musculus` in the search result.
     * Part and developmental stage of organism - `adult` as `dev_stage` and `lung` as `tissue_type`
@@ -98,7 +88,6 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ## Solution
 > ![template_all_samples](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/template_all_samples.jpg)
 {: .solution}
-
 * Click on `+ Add` button and fill the Basic details
     * `Unique name` - a_wt
     * `Title`- Sample a wildtype
@@ -106,15 +95,11 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ## Solution
 > ![template_sample_a](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/template_sample_a.jpg)
 {: .solution}
-
 > ## Note
 > We will only register one sample, but typically there are many samples and it can be wise to download a template and fill it in e.g. Excel.
 {: .callout}
-
 5. Use the [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html) option to submit sequence reads with associated experimental information.
-
 ![submit_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_submit_reads.jpg)
-
 * Select your Study accession (typically starting with PRJEB) and click on **Next**
 * Since we already have submitted our Sample, click on **Skip** in the next window
 * Fill in the Run information
