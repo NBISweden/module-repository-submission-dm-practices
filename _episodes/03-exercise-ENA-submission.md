@@ -65,6 +65,8 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 3. Use the [Register study (project)](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) option to register new studies.
 
+![select_register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_study.jpg)
+
 * **Title**: VEGFR2 Y949F mutation
 * **Abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
 * Click on **Next**
@@ -75,9 +77,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 4. Use the [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) option to register new samples.
 
-> ## Solution
-> ![register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_sample.jpg)
-{: .solution}
+![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
 
 * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
 * Click on **Next**
@@ -104,7 +104,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
     * `Title`- Sample a wildtype
 * Click on **Submit**
 > ## Solution
-> ![template_sample_a](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/template_sample_a_.jpg)
+> ![template_sample_a](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/template_sample_a.jpg)
 {: .solution}
 
 > ## Note
@@ -113,7 +113,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 5. Use the [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html) option to submit sequence reads with associated experimental information.
 
-![submit_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads.jpg)
+![submit_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_submit_reads.jpg)
 
 * Select your Study accession (typically starting with PRJEB) and click on **Next**
 * Since we already have submitted our Sample, click on **Skip** in the next window
@@ -130,7 +130,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 * Click **Submit**
 
 ## Files to submit
-There are six sequence files (.bam format) to submit see https://nbisweden.github.io/module-repository-submission-dm-practices/data>
+This sequence file (.bam format) needs to be downloaded previous to exercise 
 A_Wt https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9163/E-MTAB-9163.up_201_1.bam 
 
 
