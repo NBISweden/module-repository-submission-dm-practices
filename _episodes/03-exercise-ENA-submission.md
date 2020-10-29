@@ -70,9 +70,11 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 * **Title**: VEGFR2 Y949F mutation
 * **Abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
 * Click on **Next**
+
 > ## Solution
 > ![register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_study.jpg)
 {: .solution}
+
 4. Use the [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) option to register new samples.
 > ## Picture
 > ![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
