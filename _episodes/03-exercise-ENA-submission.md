@@ -62,7 +62,11 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 2. Go to the `New Submission` tab. Each of the options displayed will lead you to interactive web forms that guide you through the submission of these objects. Interactive submission is recommended for registration of your Study and Samples.
 ![new_submission_1-2-3](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/new_submission_1-2-3.jpg)
 3. Use the [Register study (project)](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) option to register new studies.
-![select_register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_study.jpg)
+
+> ## Picture
+> ![select_register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_study.jpg)
+{: .solution}
+
 * **Title**: VEGFR2 Y949F mutation
 * **Abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
 * Click on **Next**
@@ -70,7 +74,9 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ![register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_study.jpg)
 {: .solution}
 4. Use the [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) option to register new samples.
-![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
+> ## Picture
+> ![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
+{: .solution}
 * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
 * Click on **Next**
 > ## Solution
@@ -99,7 +105,9 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > We will only register one sample, but typically there are many samples and it can be wise to download a template and fill it in e.g. Excel.
 {: .callout}
 5. Use the [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html) option to submit sequence reads with associated experimental information.
-![submit_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_submit_reads.jpg)
+> ## Picture
+> ![submit_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_submit_reads.jpg)
+{: .solution}
 * Select your Study accession (typically starting with PRJEB) and click on **Next**
 * Since we already have submitted our Sample, click on **Skip** in the next window
 * Fill in the Run information
