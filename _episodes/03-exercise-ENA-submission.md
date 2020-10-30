@@ -30,7 +30,7 @@ keypoints:
     5. Link the sequencing data to the sample metadata
 
 ### File upload
-You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other options, follow [this link](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options), e.g. [Windows Explorer](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html?highlight=explorer#using-windows-file-explorer)*
+You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other options, follow [this link](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)*
 
 > ## Note
 > This sequence file needs to be downloaded previous to the exercise: 
