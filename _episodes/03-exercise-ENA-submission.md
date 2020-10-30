@@ -135,7 +135,6 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 > ## Solution
 > ![submit_reads_1](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_1.jpg)
-> ![submit_reads_1](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_1_mini.jpg)
 > ![submit_reads_2](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_2.jpg)
 {: .solution}
 
