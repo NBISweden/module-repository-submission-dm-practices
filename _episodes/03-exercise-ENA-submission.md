@@ -32,6 +32,12 @@ keypoints:
 ### File upload
 You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other options, follow [this link](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options), e.g. [Windows Explorer](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html?highlight=explorer#using-windows-file-explorer)*
 
+> ## Note
+> This sequence file needs to be downloaded previous to the exercise: 
+> [A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)
+> Put it e.g. in a folder named dm-practices-data on your Desktop and name the file A_Wt.fastq.gz.
+{: .callout}
+
 1. Launch the Webin File Loader application (Mac users please see further instructions below)
 
 ![webin_file_uploader](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/webin_file_uploader.jpg)
@@ -67,8 +73,11 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ![select_register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_study.jpg)
 {: .solution}
 
-* **Title**: VEGFR2 Y949F mutation
-* **Abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
+* Enter the following information
+    * **Release date**: 29-Dec-2021
+    * **Short name**: VEGFR2
+    * **Title**: VEGFR2 Y949F mutation
+    * **Abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
 * Click on **Next**
 
 > ## Solution
@@ -95,8 +104,8 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 {: .solution}
 
 * Fill in all information that is in common for all samples
-    * Organism Details - Search for `mouse` and choose `Mus musculus` in the search result.
-    * Part and developmental stage of organism - `adult` as `dev_stage` and `lung` as `tissue_type`
+    * **Organism Details**: Search for `mouse` and choose `Mus musculus` in the search result.
+    * **Part and developmental stage of organism**: `adult` as `dev_stage` and `lung` as `tissue_type`
 * Click on **Next**
 
 > ## Solution
@@ -104,8 +113,8 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 {: .solution}
 
 * Click on `+ Add` button and fill the Basic details
-    * `Unique name` - A_Wt
-    * `Title`- Sample A wildtype
+    * **Unique name**: A_Wt
+    * **Title**: Sample A wildtype
 * Click on **Submit**
 
 > ## Solution
@@ -121,7 +130,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 {: .solution}
 
 * Select your Study accession (typically starting with PRJEB) and click on **Next**
-* Since we already have submitted our Sample, click on **Skip** in the next window
+* Since we already have submitted our Sample (and hence chosen checklist), click on **Skip** in the next window
 * Fill in the Run information
     * Click on `One Fastq file (Single)` as file format
     * Sample reference - A_Wt
@@ -138,9 +147,9 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ![submit_reads_2](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_2.jpg)
 {: .solution}
 
-## Files to submit
-This sequence file (.fastq format) needs to be downloaded previous to exercise 
-A_Wt https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9163/E-MTAB-9163.up_201_1.bam 
+> ## Note
+> It is during this step that the submitted Study and Sample is connected with the uploaded sequence file(s).
+{: .callout}
 
 ## Reference material 
 https://www.ebi.ac.uk/training-beta/online/courses/ena-quick-tour/submitting-data-to-ena/
