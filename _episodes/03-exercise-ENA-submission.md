@@ -30,7 +30,7 @@ keypoints:
     5. Link the sequencing data to the sample metadata
 
 ### File upload
-You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use  *Note: for other options, follow [this link](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)*
+You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other options, follow [this link](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options), e.g. [Windows Explorer](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html?highlight=explorer#using-windows-file-explorer)*
 
 1. Launch the Webin File Loader application (Mac users please see further instructions below)
 
@@ -104,7 +104,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 {: .solution}
 
 * Click on `+ Add` button and fill the Basic details
-    * `Unique name` - a_wt
+    * `Unique name` - A_Wt
     * `Title`- Sample A wildtype
 * Click on **Submit**
 
@@ -123,26 +123,25 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 * Select your Study accession (typically starting with PRJEB) and click on **Next**
 * Since we already have submitted our Sample, click on **Skip** in the next window
 * Fill in the Run information
-    * Click on BAM as file format
-    * Sample reference - a_wt
+    * Click on `One Fastq file (Single)` as file format
+    * Sample reference - A_Wt
     * Instrument Model - Illumina HiSeq 2500
     * Library Source - TRANSCRIPTOMIC
     * Library Selection - other
     * Library Strategy - RNA-Seq
     * Library Layout - SINGLE
-    * File Name - a_wt.bam
-    * MD5 checksum - 9a7183503166cf772492c7d6581f3b72
+    * File Name - A_Wt.fastq.gz 
 * Click **Submit**
 
 > ## Solution
 > ![submit_reads_1](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_1.jpg)
+> ![submit_reads_1](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_1_mini.jpg)
 > ![submit_reads_2](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_2.jpg)
 {: .solution}
 
 ## Files to submit
-This sequence file (.bam format) needs to be downloaded previous to exercise 
+This sequence file (.fastq format) needs to be downloaded previous to exercise 
 A_Wt https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-9163/E-MTAB-9163.up_201_1.bam 
-
 
 ## Reference material 
 https://www.ebi.ac.uk/training-beta/online/courses/ena-quick-tour/submitting-data-to-ena/
