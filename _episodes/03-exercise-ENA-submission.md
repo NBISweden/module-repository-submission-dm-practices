@@ -8,17 +8,18 @@ objectives:
 - "Explain the steps of submission to European Nucleotide Archive."
 - "Do an interactive submission"
 keypoints:
-- "When in doubt, go to the test submission site: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra)"
+- "When in doubt on how to submit, go to the test submission site and do a test submission: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra)"
 - "The steps of submission process are
-1. Sequence file upload to your webin area
-2. Register Study
-3. Register Samples
-4. Submit sequence reads and experiments" 
+    1. Sequence file upload to your webin area
+    2. Register Study
+    3. Register Samples
+    4. Submit sequence reads and experiments" 
 - "The whole process of submission, from file upload to receiving an accession number takes time.  Do not do this late in the project, when publishers require that you publish datasets before review and deadline is 24 hours."
+- "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
 ## Do an interactive submission to ENA
 * Interactive submission is recommended for registration of your Study and Samples and for small scale Read or Sequence submission.
-* Use the test submission site when you want to test and the production site for real submissions:
+* Use the test submission site when you want to test, and the production site for real submissions:
     * Test site: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra)
     * Production site: [https://www.ebi.ac.uk/ena/submit/sra](https://www.ebi.ac.uk/ena/submit/sra)
     * *Note: The test service is recreated from the full content of the production service every day at 03.00 GMT/BST. Therefore, any submissions made to the test service will be removed by the following day.*
@@ -30,18 +31,18 @@ keypoints:
     5. Link the sequencing data to the sample metadata
 
 ### File upload
-You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other options, follow [this link](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)*
+You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other upload options, please see **[ENA documentation](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)***
 
 > ## Note
+> Webin File Loader needs to be installed on your computer previous to the exercise.
+>
 > This sequence file needs to be downloaded previous to the exercise: 
-> [A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)
-> Put it e.g. in a folder named dm-practices-data on your Desktop and name the file A_Wt.fastq.gz.
+> **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**
+>
+> Put it e.g. in a folder named dm-practices-data on your Desktop, and name the file `A_Wt.fastq.gz`
 {: .callout}
 
 1. Launch the Webin File Loader application (Mac users please see further instructions below)
-
-![webin_file_uploader](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/webin_file_uploader.jpg)
-
 2. Enter your Webin username in the `Username` field.
 3. Enter your Webin password in the `Password` field.
 4. Browse into the local ´Upload Directory` containing the data files you wish to upload using the ... button.
@@ -51,17 +52,20 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 8. Select the files to upload. You can use the `Select All` button to select all the files for upload.
 9. Click on the `Upload` button.
 
-**Additional Instructions For Mac Users**
+![webin_file_uploader](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/webin_file_uploader.jpg)
 
-* In order to run the File Uploader application, open your file explorer and go to the directory where the `WebinUploader.jnlp` file has been saved.
 
-* While pressing the <kbd>Ctrl</kbd> button, select the WebinUploader.jnlp file then select the `Open` option.
-
-* The following dialog will now be displayed:
-
-![mac_webin_file_upload](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/mac_webin_file_upload.png)
-
-* Now select the `Open` button. This will launch the application.
+> ## Additional Instructions For Mac Users
+> * In order to run the File Uploader application, open your file explorer and go to the directory where the `WebinUploader.jnlp` file has been saved.
+>
+> * While pressing the <kbd>Ctrl</kbd> button, select the WebinUploader.jnlp file then select the `Open` option.
+>
+> * The following dialog will now be displayed:
+>
+> ![mac_webin_file_upload](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/mac_webin_file_upload.png)
+>
+> * Now select the `Open` button. This will launch the application.
+{: .solution}
 
 ### New submission
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra) and log in with your Webin username and password. 
@@ -78,15 +82,20 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
     * **Short name**: VEGFR2
     * **Title**: VEGFR2 Y949F mutation
     * **Abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
-* Click on **Next**
+* Click on **Submit**
+* Click OK in the pop-up **Please confirm that you want to submit** window
 
 > ## Solution
 > ![register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_study.jpg)
 {: .solution}
 
 ### 2. Select [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) 
+* Click on the **Home** tab and then click on the link `samples`
+![home_samples](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/home_samples.jpg)
+* Click on **Next**
+
 > ## Picture
-> ![select_register_sample](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_sample.jpg)
+> ![select_register_samples](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_samples.jpg)
 {: .solution}
 
 * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
@@ -104,7 +113,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 {: .solution}
 
 * Fill in all information that is in common for all samples
-    * **Organism Details**: Search for `mouse` and choose `Mus musculus` in the search result.
+    * **Organism Details**: Search for `mouse` and choose `Mus musculus` from the search result.
     * **Part and developmental stage of organism**: `adult` as `dev_stage` and `lung` as `tissue_type`
 * Click on **Next**
 
@@ -116,6 +125,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
     * **Unique name**: A_Wt
     * **Title**: Sample A wildtype
 * Click on **Submit**
+* Click OK in the pop-up **Please confirm that you want to submit** window
 
 > ## Solution
 > ![template_sample_a](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/template_sample_a.jpg)
@@ -125,6 +135,10 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > We will only register one sample, but typically there are many samples and it can be wise to download a template and fill it in e.g. Excel.
 {: .callout}
 ### 3. Select [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html)
+* Click on the **Home** tab and then click on the link `sequence reads`
+![home_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/home_reads.jpg)
+* Click on **Next**
+
 > ## Picture
 > ![submit_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_submit_reads.jpg)
 {: .solution}
@@ -133,14 +147,16 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 * Since we already have submitted our Sample (and hence chosen checklist), click on **Skip** in the next window
 * Fill in the Run information
     * Click on `One Fastq file (Single)` as file format
-    * Sample reference - A_Wt
-    * Instrument Model - Illumina HiSeq 2500
-    * Library Source - TRANSCRIPTOMIC
-    * Library Selection - other
-    * Library Strategy - RNA-Seq
-    * Library Layout - SINGLE
-    * File Name - A_Wt.fastq.gz 
+    * Sample reference - `A_Wt`
+    * Instrument Model - `Illumina HiSeq 2500`
+    * Library Source - `TRANSCRIPTOMIC`
+    * Library Selection - `other`
+    * Library Strategy - `RNA-Seq`
+    * Library Layout - `SINGLE`
+    * File Name - `A_Wt.fastq.gz `
+        * *Note: When you write the file name, a green square with the file name will pop-up, click on this in order to connect this submission with the uploaded file.*
 * Click **Submit**
+* Click OK in the pop-up **Please confirm that you want to submit** window
 
 > ## Solution
 > ![submit_reads_1](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_1.jpg)
@@ -151,11 +167,10 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > It is during this step that the submitted Study and Sample is connected with the uploaded sequence file(s).
 {: .callout}
 
-## Reference material 
-https://www.ebi.ac.uk/training-beta/online/courses/ena-quick-tour/submitting-data-to-ena/
+## ENA training material 
+* [ENA quick tour](https://www.ebi.ac.uk/training-beta/online/courses/ena-quick-tour/submitting-data-to-ena/)
 
-Slides and webinar: https://www.ebi.ac.uk/training/online/course/european-nucleotide-archive-ena-introduction-webin 
+* [ENA webinar](https://www.ebi.ac.uk/training/online/course/european-nucleotide-archive-ena-introduction-webin) 
+    * [ENA slides only](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/ena_webinar_slides_030419.pptx)
 
-Slides only: https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/ena_webinar_slides_030419.pptx
-
-ReadTheDocs tutorials: https://ena-docs.readthedocs.io/en/latest/, https://ena-docs.readthedocs.io/en/latest/submit/general-guide.html 
+* [ReadTheDocs tutorial](https://ena-docs.readthedocs.io/en/latest/)
