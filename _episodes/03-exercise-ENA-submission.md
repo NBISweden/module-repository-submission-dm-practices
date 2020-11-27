@@ -25,13 +25,13 @@ keypoints:
     * *Note: The test service is restarted every night, any submissions made to the test service will be removed by the following day. Hence, do not start a test submission one day, and expect to continue the next day.*
 
 * Submission steps:
-    1. Upload your sequence data
-    2. Provide study level information
-    3. Choose a MIxS sample checklist
-    4. Provide sample metadata
-    5. Link the sequencing data to the sample metadata
+    1. File upload - Upload your sequence data to upload area at EBI
+    2. New submission 
+    3. Register study - Provide study level information
+    4. Register sample(s) - Provide sample metadata
+    5. Submit sequence read(s) - Link the sequencing data to the sample metadata
 
-### File upload
+### 1. File upload
 You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other upload options, please see **[ENA documentation](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)***
 
 > ## Note
@@ -77,12 +77,12 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 
 
-### New submission
+### 2. New submission
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra) and log in with your Webin username and password. 
 * Go to the `New Submission` tab. Each of the options displayed will lead you to interactive web forms that guide you through the submission of these objects. Interactive submission is recommended for registration of your Study and Samples.
 ![new_submission_1-2-3](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/new_submission_1-2-3.jpg)
 
-### 1. Select [Register study (project)](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) 
+### 3. [Register study (project)](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) 
 > ## Picture
 > ![select_register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_study.jpg)
 {: .solution}
@@ -99,7 +99,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ![register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_study.jpg)
 {: .solution}
 
-### 2. Select [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) 
+### 4. [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) 
 * Click on the **Home** tab and then click on the link `samples`
 ![home_samples](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/home_samples.jpg)
 * Click on **Next**
@@ -144,7 +144,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > ## Note
 > We will only register one sample, but typically there are many samples and it can be wise to download a template and fill it in e.g. Excel.
 {: .callout}
-### 3. Select [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html)
+### 5. [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html)
 * Click on the **Home** tab and then click on the link `sequence reads`
 ![home_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/home_reads.jpg)
 * Click on **Next**
