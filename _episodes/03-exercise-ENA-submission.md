@@ -23,7 +23,7 @@ keypoints:
     * Test site: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra)
     * Production site: [https://www.ebi.ac.uk/ena/submit/sra](https://www.ebi.ac.uk/ena/submit/sra)
     * *Note: The test service is restarted every night, any submissions made to the test service will be removed by the following day. Hence, do not start a test submission one day, and expect to continue the next day.*
-    
+
 * Submission steps:
     1. Upload your sequence data
     2. Provide study level information
@@ -43,7 +43,26 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 > Put it e.g. in a folder named dm-practices-data on your Desktop, and name the file `A_Wt.fastq.gz`
 {: .callout}
 
-1. Launch the Webin File Loader application (Mac users please see further instructions below)
+1. Launch the Webin File Loader application.
+
+> ## On windows
+> * On Windows, start typing Webin, in the Search field (bottom left in your task bar)
+> ![search_webin](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/search_webin.jpg)
+> * Select WebinUploader from the search result.
+{: .solution}
+
+> ## On Mac
+> * In order to run the File Uploader application, open your file explorer and go to the directory where the `WebinUploader.jnlp` file has been saved.
+>
+> * While pressing the <kbd>Ctrl</kbd> button, select the WebinUploader.jnlp file then select the `Open` option.
+>
+> * The following dialog will now be displayed:
+>
+> ![mac_webin_file_upload](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/mac_webin_file_upload.png)
+>
+> * Now select the `Open` button. This will launch the application.
+{: .solution}
+
 2. Enter your Webin username in the `Username` field.
 3. Enter your Webin password in the `Password` field.
 4. Browse into the local ´Upload Directory` containing the data files you wish to upload using the ... button.
@@ -56,17 +75,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 ![webin_file_uploader](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/webin_file_uploader.jpg)
 
 
-> ## Additional Instructions For Mac Users
-> * In order to run the File Uploader application, open your file explorer and go to the directory where the `WebinUploader.jnlp` file has been saved.
->
-> * While pressing the <kbd>Ctrl</kbd> button, select the WebinUploader.jnlp file then select the `Open` option.
->
-> * The following dialog will now be displayed:
->
-> ![mac_webin_file_upload](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/mac_webin_file_upload.png)
->
-> * Now select the `Open` button. This will launch the application.
-{: .solution}
+
 
 ### New submission
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra) and log in with your Webin username and password. 
