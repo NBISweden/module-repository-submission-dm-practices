@@ -3,7 +3,17 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-FIXME: home page introduction
+The datasets produced during a research project is a treasure on its own, and should be treated as such. When publicly available and appropriately described, they are ready to be re-used by yourself as well as others.  
+
+This lesson will give you the why, where and how of data sharing via repository submission, including hands-on exercise. By the end of this lesson you will:
+
+* Know the benefits of data sharing
+
+* Know how to find a suitable repository for different types of data
+
+* Have experience of a repository submission
+
+* Know where to get help in future submission adventures
 
 <!-- this is an html comment -->
 
@@ -11,7 +21,7 @@ FIXME: home page introduction
 
 > ## Prerequisites
 >
-> FIXME
+> Follow the instructions in [Setup](https://nbisweden.github.io/module-repository-submission-dm-practices/setup.html) in order to be prepared for the excercise part of this lesson.
 {: .prereq}
 
 {% include links.md %}
