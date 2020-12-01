@@ -20,17 +20,17 @@ Put it e.g. in a folder named dm-practices-data on your Desktop and name the fil
 
 * Download the [Webin File Uploader](http://www.ebi.ac.uk/ena/upload/WebinUploader.jnlp)
 
-### Additional instructions for MAC users:
-
-* When downloading the application the following dialog box will be displayed:
-![download_webin_uploader](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/download_webin_uploader.png)
-
-* Select the `Save File` option to save the WebinUploader.jnlp file to your local download directory.
-
-* If you selected the `Open with` option instead of the `Save File` option then the following dialog box will be displayed:
-![webin_uploader_open](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/webin_uploader_open.png)
-
-* In this case please select `OK`. This will save the WebinUploader.jnlp file to your default local download directory.
-
+> ### Additional instructions for MAC users:
+>
+> * When downloading the application the following dialog box will be displayed:
+> ![download_webin_uploader](/fig/download_webin_uploader.png)
+>
+> * Select the `Save File` option to save the WebinUploader.jnlp file to your local download directory.
+> 
+> * If you selected the `Open with` option instead of the `Save File` option then the following dialog box will be displayed:
+> ![webin_uploader_open](/fig/webin_uploader_open.png)
+> 
+> * In this case please select `OK`. This will save the WebinUploader.jnlp file to your default local download directory.
+{: .solution}
 
 {% include links.md %}
