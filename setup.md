@@ -20,7 +20,7 @@ Put it e.g. in a folder named dm-practices-data on your Desktop and name the fil
 
 * Download the [Webin File Uploader](http://www.ebi.ac.uk/ena/upload/WebinUploader.jnlp)
 
-> ### Additional instructions for MAC users:
+> ## Additional instructions for MAC users:
 >
 > * When downloading the application the following dialog box will be displayed:
 > ![download_webin_uploader](/fig/download_webin_uploader.png)
