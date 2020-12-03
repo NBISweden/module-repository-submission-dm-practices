@@ -1,6 +1,9 @@
 ---
 title: Setup
 ---
+## Presentation slides
+* Download the [presentation slides](/files/module-repository-submission-dm-practice.pdf)
+
 ## Account at European Nucleotide Archive
 
 * Go to [ENA submit homepage](https://www.ebi.ac.uk/ena/submit/sra/#)
