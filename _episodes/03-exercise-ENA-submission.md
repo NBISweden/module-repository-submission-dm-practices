@@ -17,6 +17,24 @@ keypoints:
 - "The whole process of submission, from file upload to receiving an accession number takes time.  Do not do this late in the project, when publishers require that you publish datasets before review and deadline is 24 hours."
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
+> ## Prerequisites
+> Webin File Loader needs to be installed on your computer previous to the exercise.
+>
+> This sequence file needs to be downloaded previous to the exercise: 
+> **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**
+>
+> Put it e.g. in a folder named dm-practices-data on your Desktop, and name the file `A_Wt.fastq.gz`
+>
+> This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_practices.tsv) from the OpenRefine module in order to submit the sample metadata. This spreadsheet needs to be completed with two lines at the top of the file: 
+>
+> #checklist_accession	ERC000011
+> #unique_name_prefix
+>
+> **Note:** There is a tab between `#checklist_accession` and `ERC000011`
+>
+> Either add these two lines using an editor or download [this file](../files/ENA_samples_workshop_DM_practices.tsv), where we have done the addition already.
+{: .prereq}
+
 ## Do an interactive submission to ENA
 * Interactive submission is recommended for registration of your Study and Samples and for small scale Read or Sequence submission.
 * Use the test submission site when you want to test, and the production site for real submissions:
@@ -33,15 +51,6 @@ keypoints:
 
 ### 1. File upload
 You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other upload options, please see **[ENA documentation](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)***
-
-> ## Note
-> Webin File Loader needs to be installed on your computer previous to the exercise.
->
-> This sequence file needs to be downloaded previous to the exercise: 
-> **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**
->
-> Put it e.g. in a folder named dm-practices-data on your Desktop, and name the file `A_Wt.fastq.gz`
-{: .callout}
 
 1. Launch the Webin File Loader application.
 
