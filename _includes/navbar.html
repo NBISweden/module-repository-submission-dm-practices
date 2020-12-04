@@ -34,8 +34,9 @@
       </a>
       {% elsif site.carpentry == "nbis" %}
       <a href="{{ site.nbis_site }}" class="pull-left">
-        <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/nbis.svg %}" alt="The NBIS logo" />
-      </a>{% endif %}
+        <img class="navbar-logo" src="{{ relative_root_path }}{% link /assets/img/nbislogo-green.svg %}" alt="NBIS logo" />
+      </a>
+      {% endif %}
 
       {% comment %} Always show link to home page. {% endcomment %}
       <a class="navbar-brand" href="{{ relative_root_path }}{% link index.md %}">Home</a>
