@@ -28,7 +28,7 @@ Submissions are represented using a number of different metadata objects. Before
 
 The full **[metadata model](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/metadata.html)** with relationships between the different types of objects is illustrated below.
 
-![metadata_model](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/metadata_model.png)
+![metadata_model](../fig/metadata_model.png)
 
 
 * **Study:** A study (project) groups together data submitted to the archive and controls its release date. A study accession is typically used when citing data submitted to ENA. Note that all associated data and other objects are made public when the study is released.
