@@ -20,19 +20,16 @@ keypoints:
 > ## Prerequisites
 > * **Webin File Loader** needs to be installed on your computer previous to the exercise.
 >
-> * This sequence file needs to be downloaded previous to the exercise: **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**
->
+> * This sequence file needs to be downloaded previous to the exercise: **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**  
 >   Put it e.g. in a folder named dm-practices-data on your Desktop, and name the file `A_Wt.fastq.gz`
 >
 > * This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_practices.tsv) from the OpenRefine module in order to submit the sample metadata. This spreadsheet needs to be completed with two lines at the top of the file: 
 >
->   #checklist_accession	ERC000011
->
+>   #checklist_accession	ERC000011  
 >   #unique_name_prefix
 >
->   **Note:** There is a tab between `#checklist_accession` and `ERC000011`
->
->   Either add these two lines using an editor or download [this file](../files/ENA_samples_workshop_DM_practices.tsv), where we have done the addition already.
+>   **Note:** There is a tab between `#checklist_accession` and `ERC000011`  
+>   Either add these two lines using an editor or download **[this file](../files/ENA_samples_workshop_DM_practices.tsv)**, where we have done the addition already.
 {: .prereq}
 
 ## Do an interactive submission to ENA
