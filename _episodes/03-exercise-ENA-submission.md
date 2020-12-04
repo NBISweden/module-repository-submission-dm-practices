@@ -47,7 +47,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 > ## On windows
 > * On Windows, start typing Webin, in the Search field (bottom left in your task bar)
-> ![search_webin](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/search_webin.jpg)
+> ![search_webin](../fig/search_webin.jpg)
 > * Select WebinUploader from the search result.
 {: .solution}
 
@@ -58,7 +58,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 >
 > * The following dialog will now be displayed:
 >
-> ![mac_webin_file_upload](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/mac_webin_file_upload.png)
+> ![mac_webin_file_upload](../fig/mac_webin_file_upload.png)
 >
 > * Now select the `Open` button. This will launch the application.
 {: .solution}
@@ -72,19 +72,17 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 8. Select the files to upload. You can use the `Select All` button to select all the files for upload.
 9. Click on the `Upload` button.
 
-![webin_file_uploader](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/webin_file_uploader.jpg)
-
-
+![webin_file_uploader](../fig/webin_file_uploader.jpg)
 
 
 ### 2. New submission
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra) and log in with your Webin username and password. 
 * Go to the `New Submission` tab. Each of the options displayed will lead you to interactive web forms that guide you through the submission of these objects. Interactive submission is recommended for registration of your Study and Samples.
-![new_submission_1-2-3](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/new_submission_1-2-3.jpg)
+![new_submission_1-2-3](../fig/new_submission_1-2-3.jpg)
 
 ### 3. [Register study (project)](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) 
 > ## Picture
-> ![select_register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_study.jpg)
+> ![select_register_study](../fig/select_register_study.jpg)
 {: .solution}
 
 * Enter the following information
@@ -96,61 +94,83 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 * Click OK in the pop-up **Please confirm that you want to submit** window
 
 > ## Solution
-> ![register_study](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/register_study.jpg)
+> ![register_study](../fig/register_study.jpg)
 {: .solution}
 
 ### 4. [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) 
 * Click on the **Home** tab and then click on the link `samples`
-![home_samples](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/home_samples.jpg)
+![home_samples](../fig/home_samples.jpg)
 * Click on **Next**
 
 > ## Picture
-> ![select_register_samples](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_register_samples.jpg)
+> ![select_register_samples](../fig/select_register_samples.jpg)
 {: .solution}
 
-* Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
-* Click on **Next**
+* There are two ways to submit samples, either from scratch by Selecting a Checklist or to Submit a Completed Spreadsheet. 
 
-> ## Solution
-> ![select_checklist](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_checklist.jpg)
+> ## Picture
+> ![sample_submission_choice](../fig/sample_submission_choice.jpg)
 {: .solution}
 
-* Add two fields from **Part and developmental stage of organism**: `dev_stage` and `tissue_type`.
-* Click on **Next**
+* Normally you do not have a spreadsheet to begin with but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and click on `Submit Completed Spreadsheet`. 
 
-> ## Solution
-> ![add_fields](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/add_fields.jpg)
-{: .solution}
+* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (or, if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
 
-* Fill in all information that is in common for all samples
-    * **Organism Details**: Search for `mouse` and choose `Mus musculus` from the search result.
-    * **Part and developmental stage of organism**: `adult` as `dev_stage` and `lung` as `tissue_type`
-* Click on **Next**
-
-> ## Solution
-> ![template_all_samples](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/template_all_samples.jpg)
-{: .solution}
-
-* Click on `+ Add` button and fill the Basic details
-    * **Unique name**: A_Wt
-    * **Title**: Sample A wildtype
-* Click on **Submit**
+* Now there are 6 samples to be submitted. Click on **Submit**
 * Click OK in the pop-up **Please confirm that you want to submit** window
 
-> ## Solution
-> ![template_sample_a](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/template_sample_a.jpg)
+> ## Picture
+> ![sample_submission_submit](../fig/sample_submission_submit.jpg)
 {: .solution}
 
-> ## Note
-> We will only register one sample, but typically there are many samples and it can be wise to download a template and fill it in e.g. Excel.
-{: .callout}
+> ## Optional: Steps to submit samples from scratch
+> * Click on `Select Checklist`
+> * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
+> * Click on **Next**
+> 
+> > ## Solution
+> > ![select_checklist](../fig/select_checklist.jpg)
+> {: .solution}
+> 
+> * Add two fields from **Part and developmental stage of organism**: `dev_stage` and `tissue_type`.
+> * Click on **Next**
+> 
+> > ## Solution
+> > ![add_fields](../fig/add_fields.jpg)
+> {: .solution}
+> 
+> * Fill in all information that is in common for all samples
+    * **Organism Details**: Search for `mouse` and choose `Mus musculus` from the search result.
+    * **Part and developmental stage of organism**: `adult` as `dev_stage` and `lung` as `tissue_type`
+> * Click on **Next**
+> 
+> > ## Solution
+> > ![template_all_samples](../fig/template_all_samples.jpg)
+> {: .solution}
+> 
+> * Click on `+ Add` button and fill the Basic details
+    * **Unique name**: A_Wt
+    * **Title**: Sample A wildtype
+> * Click on **Submit**
+> * Click OK in the pop-up **Please confirm that you want to submit** window
+> 
+> > ## Solution
+> > ![template_sample_a](../fig/template_sample_a.jpg)
+> {: .solution}
+> 
+> > ## Note
+> This excercise only registers one sample, but typically there are many samples and it can be wise to download a template and fill it in e.g. Excel.
+> {: .callout}
+{: .solution}
+
+
 ### 5. [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html)
 * Click on the **Home** tab and then click on the link `sequence reads`
-![home_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/home_reads.jpg)
+![home_reads](../fig/home_reads.jpg)
 * Click on **Next**
 
 > ## Picture
-> ![submit_reads](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/select_submit_reads.jpg)
+> ![submit_reads](../fig/select_submit_reads.jpg)
 {: .solution}
 
 * Select your Study accession (typically starting with PRJEB) and click on **Next**
@@ -169,8 +189,8 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 * Click OK in the pop-up **Please confirm that you want to submit** window
 
 > ## Solution
-> ![submit_reads_1](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_1.jpg)
-> ![submit_reads_2](https://nbisweden.github.io/module-repository-submission-dm-practices/fig/submit_reads_2.jpg)
+> ![submit_reads_1](../fig/submit_reads_1.jpg)
+> ![submit_reads_2](../fig/submit_reads_2.jpg)
 {: .solution}
 
 > ## Note

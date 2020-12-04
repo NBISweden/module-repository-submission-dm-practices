@@ -1,0 +1,11 @@
+#checklist_accession	ERC000011
+#unique_name_prefix
+sample_alias	tax_id	scientific_name	common_name	sample_title	sample_description	dev_stage	tissue_type	collection_date	collected_by	sex	strain
+890470	10090	mus musculus	house mouse	wt_A	lung tissue from adult wildtype mouse	adult	lung	2018-01-06T00:00:00Z	Kim	male	vegrf2
+809785	10090	mus musculus	house mouse	wt_B	lung tissue from adult wildtype mouse	adult	lung	2020-01-01	Kim	male	vegrf2
+809781	10090	mus musculus	house mouse	wt_C	lung tissue from adult wildtype mouse	adult	lung	2020-01-01	Kim	male	vegrf2
+890471	10090	mus musculus	house mouse	mut_A	lung tissue from adult Vegrf2 KO mouse	adult	lung	2020-01-01	Kim	male	vegrf2
+809786	10090	mus musculus	house mouse	mut_B	lung tissue from adult Vegrf2 KO mouse	adult	lung	2020-01-01	Kim	male	vegrf2
+809783	10090	mus musculus	house mouse	mut_C	lung tissue from adult Vegrf2 KO mouse	adult	lung	2020-01-01	Kim	male	vegrf2
+#template
+#units
