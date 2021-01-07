@@ -63,13 +63,13 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
 ### 1. In the browser
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin) and log in with your Webin username and password. 
 
-![webin-login](../fig/webin-login.jpg)
+  ![webin-login](../fig/webin-login.jpg)
 
 * On the Dashboard, click on Register Study (project)
 
-> ## Picture Dashboard Study
-> ![dashboard-study](../fig/dashboard-study.jpg)
-{: .solution}
+  > ## Picture Dashboard Study
+  > ![dashboard-study](../fig/dashboard-study.jpg)
+  {: .solution}
 
 * Enter the following information
     * **Release date**: 29-Dec-2021
@@ -79,20 +79,20 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
 * Click on **Save**
 * Note down the accession number (starts with PJEB) displayed in the pop-up window, and click OK.
 
-> ## Solution
-> ![webin-register-study](../fig/webin-register-study.jpg)
-{: .solution}
+  > ## Solution
+  > ![webin-register-study](../fig/webin-register-study.jpg)
+  {: .solution}
 * On the Dashboard, click on Register Samples
 
-> ## Picture Dashboard Samples
-> ![dashboard-sample](../fig/dashboard-sample.jpg)
-{: .solution}
+  > ## Picture Dashboard Samples
+  > ![dashboard-sample](../fig/dashboard-sample.jpg)
+  {: .solution}
 
 * There are two ways to submit samples, either from scratch via `Download spreadsheet to register samples` or via `Upload filled spreadsheet to register samples`. 
 
-> ## Picture Sample Choice
-> ![webin-sample-choice](../fig/webin-sample-choice.jpg)
-{: .solution}
+  > ## Picture Sample Choice
+  > ![webin-sample-choice](../fig/webin-sample-choice.jpg)
+  {: .solution}
 
 * Normally you do not have a spreadsheet to begin with but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and click on `Upload filled spreadsheet to register samples`. 
 
@@ -102,9 +102,9 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
 
 * Click OK in the pop-up window
 
-> ## Picture Sample Submit
-> ![webin-sample-submit](../fig/webin-sample-submit.jpg)
-{: .solution}
+  > ## Picture Sample Submit
+  > ![webin-sample-submit](../fig/webin-sample-submit.jpg)
+  {: .solution}
 
 ### 2. [Prepare manifest file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-2-prepare-the-files)
 
@@ -134,32 +134,32 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
   * FASTQ: Single fastq file
 
 * In a text editor such as Notepad, create a manifest file for the A_Wt sequence file, write the following information:  
->   STUDY     
-    SAMPLE    
-    INSTRUMENT  Illumina HiSeq 2500  
-    LIBRARY_SOURCE  TRANSCRIPTOMIC  
-    LIBRARY_SELECTION   other  
-    LIBRARY_STRATEGY    RNA-Seq  
-    FASTQ A_Wt.fastq.gz  
+  >   STUDY     
+      SAMPLE    
+      INSTRUMENT  Illumina HiSeq 2500  
+      LIBRARY_SOURCE  TRANSCRIPTOMIC  
+      LIBRARY_SELECTION   other  
+      LIBRARY_STRATEGY    RNA-Seq  
+      FASTQ A_Wt.fastq.gz  
 
 The field values for STUDY and SAMPLE needs to be collected from your submission:
 * In the browser where you submitted the study and samples, go to the Dashboard and click on the `Studies Report`
-> ## Picture Dashboard Studies Report
-> ![webin-study-report](../fig/webin-study-report.jpg)
-{: .solution}
+  > ## Picture Dashboard Studies Report
+  > ![webin-study-report](../fig/webin-study-report.jpg)
+  {: .solution}
 
 * Copy the accession number (starting with PRJEB) into the manifest file as the STUDY field value.
 * Go back to the Dashboard and click on the `Samples report`
-> ## Picture Dashboard Studies Report
-> ![webin-sample-report](../fig/webin-sample-report.jpg)
-{: .solution}
+  > ## Picture Dashboard Studies Report
+  > ![webin-sample-report](../fig/webin-sample-report.jpg)
+  {: .solution}
 
 * Locate the accession number (starting with ERS) for wt_A and copy this into the manifest file as the SAMPLE field value.
 * Save the manifest file
 
-> ## Solution
-> See an example manifest file [here](../files/A_Wt_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
-{: .solution}
+  > ## Solution
+  > See an example manifest file [here](../files/A_Wt_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
+  {: .solution}
 
 ### 3. [Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)
 
@@ -195,7 +195,9 @@ Please note that the Webin upload area is shared between test and production ser
 First we will do a validation (-validate option) to the test server (-test option), using `data` folder as both input and output directory. 
 * Copy or type the command below, and replace the `Webin-XXX` and `myPassword` with your own webin username and password, respectively:
 
-  > java -jar prg\webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -validate -test
+  > Windows: `java -jar prg\webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -validate -test`
+  > 
+  > Mac: `java -jar prg/webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -validate -test`
 
 * Press <kbd>Enter</kbd> 
 * If the validation is successful the last output row will read:  
@@ -204,7 +206,9 @@ First we will do a validation (-validate option) to the test server (-test optio
 * When the validation is successful, it is time to do a submit instead of a validation (-submit option instead of -validate). We will still use the test server, and the same input and output directories as for the validation step. Try to write the command yourself or take a peak at the solution below.
 
   > ## Solution
-  > java -jar prg\webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -submit -test
+  >  Windows: `java -jar prg\webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -submit -test`
+  >
+  > Mac: `java -jar prg/webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -submit -test`
 
 * The processing will take a while but since the validation was successful, it is only the upload of the sequence file that might misfire. Well done!
 
