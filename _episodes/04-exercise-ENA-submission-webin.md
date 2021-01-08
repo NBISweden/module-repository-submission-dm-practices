@@ -10,12 +10,12 @@ objectives:
 keypoints:
 - "When in doubt on how to submit, go to the test submission site and do a test submission: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)"
 - "The steps of submission process are
-    1. In the browser:
-       1. Login 
-       2. Register study - Provide study level information
-       3. Register sample(s) - Provide sample metadata
-    2. Create manifest file - envelope / metadata for sequence files
-    3. Upload manifest file and sequence files"
+     1. In the browser:
+        1. Login  
+        2. Register study - Provide study level information  
+        3. Register sample(s) - Provide sample metadata  
+     2. Create manifest file(s) - envelope / metadata for sequence files  
+     3. Validate and upload manifest file(s) and sequence file(s)"
 - "The whole process of submission, from file upload to receiving an accession number takes time.  Do not do this late in the project, when publishers require that you publish datasets before review and deadline is 24 hours."
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
@@ -26,10 +26,10 @@ keypoints:
 > 
 > * If not done already, create a folder called `dm-practices` on your Desktop. Also create the subfolders `Desktop/dm-practices/data` and `Desktop/dm-practices/prg`.
 > 
-> * Download Webin-CLI Java jar file from its [GitHub repository](https://github.com/enasequence/webin-cli/releases/latest), and put it in Desktop/dm-practices/prg/.
+> * Download Webin-CLI Java jar file from its [GitHub repository](https://github.com/enasequence/webin-cli/releases/latest), and put it in `Desktop/dm-practices/prg/`.
 >
 > * This sequence file needs to be downloaded previous to the exercise: **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**  
->   Put it in Desktop/dm-practices/data/ and name the file `A_Wt.fastq.gz`
+>   Put it in `Desktop/dm-practices/data/` and name the file `A_Wt.fastq.gz`
 {: .prereq}
 
 ## Do a submission to ENA using Webin-CLI
@@ -45,8 +45,8 @@ keypoints:
        1. Login 
        2. Register study - Provide study level information
        3. Register sample(s) - Provide sample metadata
-    2. Create manifest file - envelope / metadata for sequence files
-    3. Upload manifest file and sequence files
+    2. Create manifest file(s) - envelope / metadata for sequence files
+    3. Validate and upload manifest file(s) and sequence file(s))
 
 ### 0. Preparation of sample file
 This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_practices.tsv) from the OpenRefine module in order to submit the sample metadata. This spreadsheet needs to be completed with two lines at the top of the file: 
@@ -77,7 +77,7 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
     * **Study name**: VEGFR2
     * **Detailed study abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
 * Click on **Save**
-* Note down the accession number (starts with PJEB) displayed in the pop-up window, and click OK.
+* Note down the accession number (starts with PRJEB) displayed in the pop-up window, and click OK.
 
   > ## Solution
   > ![webin-register-study](../fig/webin-register-study.jpg)
@@ -111,7 +111,8 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
 * The set of files that are part of the submission must be specified using a manifest file. The manifest file has two columns separated by a tab (or any whitespace characters):
 
   * Field name (first column): case insensitive field name
-  * Field value (second column): field value
+  * Field value (second column): field value  
+
 
 * The following metadata fields are supported in the manifest file:
 
@@ -127,11 +128,13 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
   * LIBRARY_STRATEGY: [See permitted values](https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#strategy)
   * DESCRIPTION: free text library description (optional)
 
+
 * The following file name fields are supported in the manifest file:
 
   * BAM: Single BAM file
   * CRAM: Single CRAM file
   * FASTQ: Single fastq file
+
 
 * In a text editor such as Notepad, create a manifest file for the A_Wt sequence file, write the following information:  
   >   STUDY     
@@ -142,7 +145,7 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
       LIBRARY_STRATEGY    RNA-Seq  
       FASTQ A_Wt.fastq.gz  
 
-The field values for STUDY and SAMPLE needs to be collected from your submission:
+  The field values for STUDY and SAMPLE needs to be collected from your submission:
 * In the browser where you submitted the study and samples, go to the Dashboard and click on the `Studies Report`
   > ## Picture Dashboard Studies Report
   > ![webin-study-report](../fig/webin-study-report.jpg)
@@ -150,7 +153,7 @@ The field values for STUDY and SAMPLE needs to be collected from your submission
 
 * Copy the accession number (starting with PRJEB) into the manifest file as the STUDY field value.
 * Go back to the Dashboard and click on the `Samples report`
-  > ## Picture Dashboard Studies Report
+  > ## Picture Dashboard Samples Report
   > ![webin-sample-report](../fig/webin-sample-report.jpg)
   {: .solution}
 
@@ -209,6 +212,7 @@ First we will do a validation (-validate option) to the test server (-test optio
   >  Windows: `java -jar prg\webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -submit -test`
   >
   > Mac: `java -jar prg/webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -submit -test`
+  {: .solution}
 
 * The processing will take a while but since the validation was successful, it is only the upload of the sequence file that might misfire. Well done!
 
