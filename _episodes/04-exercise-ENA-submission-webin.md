@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - "When in doubt on how to submit, go to the test submission site and do a test submission: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)"
 - "The steps of submission process are"
-     "- 1. In the browser:"
+     - "1. In the browser:"
         - "1. Login  "
         - "2. Register study - Provide study level information"  
         - "3. Register sample(s) - Provide sample metadata " 
