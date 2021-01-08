@@ -219,8 +219,6 @@ First we will do a validation (-validate option) to the test server (-test optio
 ## ENA training material 
 * [Webin-CLI Video Guide](https://youtu.be/ChCsqoq-r-Y)
 * [ENA quick tour](https://www.ebi.ac.uk/training-beta/online/courses/ena-quick-tour/submitting-data-to-ena/)
-
 * [ENA webinar](https://www.ebi.ac.uk/training/online/course/european-nucleotide-archive-ena-introduction-webin) 
     * [ENA slides only](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/ena_webinar_slides_030419.pptx)
-
 * [ReadTheDocs tutorial](https://ena-docs.readthedocs.io/en/latest/)
