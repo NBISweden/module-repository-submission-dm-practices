@@ -10,12 +10,12 @@ objectives:
 keypoints:
 - "When in doubt on how to submit, go to the test submission site and do a test submission: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)"
 - "The steps of submission process are"
-     "1. In the browser:"
-        "1. Login  "
-        "2. Register study - Provide study level information"  
-        "3. Register sample(s) - Provide sample metadata " 
-     "2. Create manifest file(s) - envelope / metadata for sequence files " 
-     "3. Validate and upload manifest file(s) and sequence file(s)"
+     "- 1. In the browser:"
+        - "1. Login  "
+        - "2. Register study - Provide study level information"  
+        - "3. Register sample(s) - Provide sample metadata " 
+     - "2. Create manifest file(s) - envelope / metadata for sequence files " 
+     - "3. Validate and upload manifest file(s) and sequence file(s)"
 - "The whole process of submission, from file upload to receiving an accession number takes time.  Do not do this late in the project, when publishers require that you publish datasets before review and deadline is 24 hours."
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
