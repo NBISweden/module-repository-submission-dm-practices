@@ -22,6 +22,9 @@ keypoints:
 >
 > * This sequence file needs to be downloaded previous to the exercise: **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**  
 >   Put it e.g. in a folder named dm-practices-data on your Desktop, and name the file `A_Wt.fastq.gz`
+> 
+> * This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_practices.tsv) from the OpenRefine module in order to submit the sample metadata. Either use that one directly or download **[this file](../files/ENA_samples_workshop_DM_practices.tsv)**, and put it in the folder Desktop/dm-practices/data/
+>
 {: .prereq}
 
 ## Do an interactive submission to ENA
@@ -37,18 +40,6 @@ keypoints:
     3. Register study - Provide study level information
     4. Register sample(s) - Provide sample metadata
     5. Submit sequence read(s) - Link the sequencing data to the sample metadata
-
-### 0. Preparation of sample file
-This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_practices.tsv) from the OpenRefine module in order to submit the sample metadata. This spreadsheet needs to be completed with two lines at the top of the file: 
-
->   #checklist_accession	ERC000011  
->   #unique_name_prefix
->
-> **Note:** There is a tab between `#checklist_accession` and `ERC000011`  
-
-* Either add these two lines using an editor such as Notepad or download **[this file](../files/ENA_samples_workshop_DM_practices.tsv)**, where we have done the addition already.
-
-* Put the file in Desktop/dm-practices/data/
 
 ### 1. File upload
 You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other upload options, please see **[ENA documentation](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)***
