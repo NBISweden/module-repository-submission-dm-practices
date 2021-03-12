@@ -12,28 +12,18 @@ title: Setup
 
 * EBI [user guide on registration](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/registration.html)
 
-## Download sequence read file
-This sequence file needs to be downloaded previous to the repository submission exercise:  
+## Download the necessary files for submission
+The following 3 files need to be downloaded previous to the repository submission exercise:  
+1. A sequence file (fastq format) - A_Wt.fastq.gz
+2. A checksum md5 file (which is used in order to validate the integrity of a file before and after data transfer) - A_Wt.fastq.gz.md5 
+3. A sample metadata spreadsheet previously created in the OpenRefine module - ENA_samples_workshop_DM_practices.tsv
 
-[A_Wt.fastq.gz](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)
+All three files are found in the subfolder `dm-practices/7-repository-submission/data/`
 
-Put it e.g. in a folder named dm-practices-data on your Desktop and name the file A_Wt.fastq.gz.
+## [FileZilla](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#using-filezilla-on-windows)
 
-## [ENA file uploader](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#using-webin-file-uploader)
+FileZilla is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.
 
-* Download the [Webin File Uploader](http://www.ebi.ac.uk/ena/upload/WebinUploader.jnlp)
-
-> ## Additional instructions for MAC users:
->
-> * When downloading the application the following dialog box will be displayed:
-> ![download_webin_uploader](/fig/download_webin_uploader.png)
->
-> * Select the `Save File` option to save the WebinUploader.jnlp file to your local download directory.
-> 
-> * If you selected the `Open with` option instead of the `Save File` option then the following dialog box will be displayed:
-> ![webin_uploader_open](/fig/webin_uploader_open.png)
-> 
-> * In this case please select `OK`. This will save the WebinUploader.jnlp file to your default local download directory.
-{: .solution}
+* Install by following the instructions at: <https://wiki.filezilla-project.org/Client_Installation>
 
 {% include links.md %}
