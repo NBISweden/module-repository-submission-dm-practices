@@ -18,13 +18,15 @@ keypoints:
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
 > ## Prerequisites
-> * **Webin File Loader** needs to be installed on your computer previous to the exercise.
+> * **FileZilla** needs to be installed on your computer previous to the exercise.
 >
-> * This sequence file needs to be downloaded previous to the exercise: **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**  
->   Put it e.g. in a folder named dm-practices-data on your Desktop, and name the file `A_Wt.fastq.gz`
+> * 3 files are needed for this exercise: 
+>   1. A sequence file (fastq format) - A_Wt.fastq.gz
+>   2. A checksum md5 file (which is used in order to validate the integrity of a file before and after data transfer) - A_Wt.fastq.gz.md5 
+>   3. A sample metadata spreadsheet previously created in the OpenRefine module - ENA_samples_workshop_DM_practices.tsv
+>   
+>   All three files are found in the subfolder `dm-practices/7-repository-submission/data/`  
 > 
-> * This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_practices.tsv) from the OpenRefine module in order to submit the sample metadata. Either use that one directly or download **[this file](../files/ENA_samples_workshop_DM_practices.tsv)**, and put it in the folder Desktop/dm-practices/data/
->
 {: .prereq}
 
 ## Do an interactive submission to ENA
@@ -42,39 +44,18 @@ keypoints:
     5. Submit sequence read(s) - Link the sequencing data to the sample metadata
 
 ### 1. File upload
-You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use Webin File Loader. *Note: for other upload options, please see **[ENA documentation](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)***
+You must upload data files into your private Webin file upload area at EMBL-EBI **before** you can submit the files through the Webin submission service. We will use FileZilla. *Note: for other upload options, please see **[ENA documentation](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#file-upload-options)***
 
-1. Launch the Webin File Loader application.
-
-> ## On windows
-> * On Windows, start typing Webin, in the Search field (bottom left in your task bar)
-> ![search_webin](../fig/search_webin.jpg)
-> * Select WebinUploader from the search result.
-{: .solution}
-
-> ## On Mac
-> * In order to run the File Uploader application, open your file explorer and go to the directory where the `WebinUploader.jnlp` file has been saved.
->
-> * While pressing the <kbd>Ctrl</kbd> button, select the WebinUploader.jnlp file then select the `Open` option.
->
-> * The following dialog will now be displayed:
->
-> ![mac_webin_file_upload](../fig/mac_webin_file_upload.png)
->
-> * Now select the `Open` button. This will launch the application.
-{: .solution}
-
-2. Enter your Webin username in the `Username` field.
-3. Enter your Webin password in the `Password` field.
-4. Browse into the local ´Upload Directory` containing the data files you wish to upload using the ... button.
-5. Click `okay` to see the list of all the files contained in the selected directory displayed in the Webin File Uploader window
-6. Choose `Overwrite` option if you wish to replace any existing files which have been previously uploaded.
-7. Choose `Upload Tree` option if you wish to preserve the directory structure when uploading files to the Webin upload area. By default, the files will be uploaded into the root directory of your Webin upload area.
-8. Select the files to upload. You can use the `Select All` button to select all the files for upload.
-9. Click on the `Upload` button.
-
-![webin_file_uploader](../fig/webin_file_uploader.jpg)
-
+1. Launch the FileZilla application.
+2. Use the binary mode: `Transfer menu -> Transfer Type -> Binary`.
+3. Open the `Site Manager` menu: `File -> Site Manager` (or by pressing `Ctrl + S`).
+4. Use the `New Site` option.
+5. Enter details to match those in the screenshot, adding your own Webin username and password:
+![filezilla-site-manager-settings](../fig/filezilla-site-manager-settings.png)
+6. Click `Connect`. *Note: If a window with 'Unknown certificate' appears, click OK.*
+7. Navigate to the downloaded sequence file (and it's checksum file) using the tree on the left panel (e.g. Desktop/dm-practices/7-repository-submission/data/).
+8. Drag and drop the files `A_Wt.fastq.gz` and `A_Wt.fastq.gz.md5` from the lower left panel to the lower right panel.
+9. Once your transfer is successful (will take a few minutes), close the application.
 
 ### 2. New submission
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/sra](https://wwwdev.ebi.ac.uk/ena/submit/sra) and log in with your Webin username and password. 
