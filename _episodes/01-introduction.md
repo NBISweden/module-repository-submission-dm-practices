@@ -3,25 +3,18 @@ title: "Introduction to repository submission"
 teaching: 5
 exercises: 0
 questions:
-- "What is data?"
 - "Why submit my data to a repository?"
+- "What is data?"
 - "How do I find a suitable repository?"
 objectives:
-- "Explain what the term data is and why data should be publicly available."
+- "Explain why data should be publicly available and what the term data means."
 - "Explain different types of repositories and how to find a suitable one."
 keypoints:
-- "There are different types of data e.g. raw, processed and metadata."
 - "Benefits of sharing data are several e.g. reproducibility purposes, follow the Open Science directive, meet requirement from publishers."
+- "There are different types of data e.g. raw, processed and metadata."
 - "If possible, use a domain-specific repository since it has maximum reach in the research community." 
 ---
 ## Why submit your datasets to a repository?
-### What is data?
-There are different types of data
-
-* Raw: straight from the instrument eg fastq, bam, cram
-* Processed: normalization, removal of outliers, expression measurements, statistics
-* Metadata: minimum information to reproduce the data, sample information, precise protocols
-
 ### Why should I share my data?
 * Open Science & FAIR
 * Reproducibility
@@ -29,6 +22,13 @@ There are different types of data
 * 3rd party access
 * Archival
 * Publication of paper requires it
+
+### What is data?
+There are different types of data
+
+* Raw: straight from the instrument eg fastq, bam, cram
+* Processed: normalization, removal of outliers, expression measurements, statistics
+* Metadata: minimum information to reproduce the data, sample information, precise protocols
 
 ## How to find a suitable repository
 ### Types of repositories
