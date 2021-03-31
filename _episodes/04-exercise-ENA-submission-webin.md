@@ -17,16 +17,16 @@ keypoints:
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
 > ## Prerequisites
+> * This excersice requires a sequence file, A_Wt.fastq.gz, found in the subfolder `dm-practices/7-repository-submission/data/`, available for download at [https://doi.org/10.17044/scilifelab.14301317](https://doi.org/10.17044/scilifelab.14301317).
+>
+> * In the folder `dm-practices/7-repository-submission/`, create a subfolder named `prg`, (i.e. `Desktop/dm-practices/7-repository-submission/prg`).
+> 
 > * Webin-CLI requires that you have Java installed before you can run it. You should have version 1.8 or newer, which can be [downloaded from Java](https://java.com/en/download/).
 >
 > * You will also need to download and install [Oracle JRE](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) (Java Runtime Environment).  
 > 
-> * If not done already, create a folder called `dm-practices` on your Desktop. Also create the subfolders `Desktop/dm-practices/data` and `Desktop/dm-practices/prg`.
-> 
-> * Download Webin-CLI Java jar file from its [GitHub repository](https://github.com/enasequence/webin-cli/releases/latest), and put it in `Desktop/dm-practices/prg/`.
+> * Download Webin-CLI Java jar file from its [GitHub repository](https://github.com/enasequence/webin-cli/releases/latest), and put it in `dm-practices/7-repository-submission/prg/`.
 >
-> * This sequence file needs to be downloaded previous to the exercise: **[A_Wt](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR418/004/ERR4185834/ERR4185834.fastq.gz)**  
->   Put it in `Desktop/dm-practices/data/` and name the file `A_Wt.fastq.gz`
 {: .prereq}
 
 ## Do a submission to ENA using Webin-CLI
@@ -44,18 +44,6 @@ keypoints:
        3. Register sample(s) - Provide sample metadata
     2. Create manifest file(s) - envelope / metadata for sequence files
     3. Validate and upload manifest file(s) and sequence file(s))
-
-### 0. Preparation of sample file
-This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_practices.tsv) from the OpenRefine module in order to submit the sample metadata. This spreadsheet needs to be completed with two lines at the top of the file: 
-
->   #checklist_accession	ERC000011  
->   #unique_name_prefix
->
-> **Note:** There is a tab between `#checklist_accession` and `ERC000011`  
-
-* Either add these two lines using an editor such as Notepad or download **[this file](../files/ENA_samples_workshop_DM_practices.tsv)**, where we have done the addition already.
-
-* Put the file in Desktop/dm-practices/data/
 
 ### 1. In the browser
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin) and log in with your Webin username and password. 
@@ -163,11 +151,11 @@ This excercise uses a previously created spreadsheet (ENA_samples_workshop_DM_pr
 
 ### 3. [Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)
 
-Open the Command Prompt window and go to the folder dm-practices  on your Desktop using the command `cd Desktop\dm-practices`:
+Open the Command Prompt window and go to the folder `dm-practices/7-repository-submission/` on your Desktop using the command `cd Desktop\dm-practices\7-repository-submission`.
 
-![cmd-cd](../fig/cmd-cd.jpg)
+<!--- ![cmd-cd](../fig/cmd-cd.jpg) Need update of pic --->
 
-* *Note for **Mac** users: Please use forward slash, i.e. write the command `cd Desktop/dm-practices`* 
+* *Note for **Mac** users: Please use forward slash, i.e. write the command `cd Desktop/dm-practices/7-repository-submission/`* 
 
 In order to use Webin-CLI we need to give instructions on who we are and what we want to do. This is done using `options`:
 
