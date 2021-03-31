@@ -18,7 +18,7 @@ The following 3 files need to be downloaded previous to the repository submissio
 2. A checksum md5 file (which is used in order to validate the integrity of a file before and after data transfer) - A_Wt.fastq.gz.md5 
 3. A sample metadata spreadsheet previously created in the OpenRefine module - ENA_samples_workshop_DM_practices.tsv
 
-All three files are found in the subfolder `dm-practices/7-repository-submission/data/`
+All three files are found in the subfolder `dm-practices/7-repository-submission/data/`, available for download at [https://doi.org/10.17044/scilifelab.14301317](https://doi.org/10.17044/scilifelab.14301317).
 
 ## [FileZilla](https://ena-docs.readthedocs.io/en/latest/submit/fileprep/upload.html#using-filezilla-on-windows)
 
