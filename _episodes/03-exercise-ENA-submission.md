@@ -159,7 +159,7 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 * Since we already have submitted our Sample (and hence chosen checklist), click on **Skip** in the next window
 * Fill in the Run information
     * Click on `One Fastq file (Single)` as file format
-    * Sample reference - `A_Wt`
+    * Sample reference - `up_201_1`
     * Instrument Model - `Illumina HiSeq 2500`
     * Library Source - `TRANSCRIPTOMIC`
     * Library Selection - `other`
