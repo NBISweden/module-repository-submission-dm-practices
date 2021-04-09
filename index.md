@@ -21,7 +21,7 @@ This lesson will give you the why, where and how of data sharing via repository 
 
 > ## Prerequisites
 >
-> Follow the instructions in [Setup](/setup.html) in order to be prepared for the excercise part of this lesson.
+> Follow the instructions in [Setup](setup.html) in order to be prepared for the excercise part of this lesson.
 {: .prereq}
 
 {% include links.md %}
