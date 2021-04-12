@@ -164,7 +164,6 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
     * Library Source - `TRANSCRIPTOMIC`
     * Library Selection - `other`
     * Library Strategy - `RNA-Seq`
-    * Library Layout - `SINGLE`
     * File Name - `A_Wt.fastq.gz `
         * *Note: When you write the file name, a green square with the file name will pop-up, click on this in order to connect this submission with the uploaded file.*
 * Click **Submit**
