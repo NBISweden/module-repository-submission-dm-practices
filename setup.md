@@ -6,7 +6,7 @@ title: Setup
 
 ## Account at European Nucleotide Archive
 
-* Go to [ENA submit homepage](https://www.ebi.ac.uk/ena/submit/sra/#)
+* Go to [ENA submit homepage](https://www.ebi.ac.uk/ena/submit/webin/#)
 
 * Click on **Register** and fill in the required details
 

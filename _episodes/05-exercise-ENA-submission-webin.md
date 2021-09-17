@@ -1,5 +1,5 @@
 ---
-title: "Exercise - submission to ENA using Webin-CLI"
+title: "(Optional) Exercise - submission to ENA using Webin-CLI"
 teaching: 10
 exercises: 40
 questions:
@@ -17,7 +17,7 @@ keypoints:
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
 > ## Prerequisites
-> * This excersice requires a sequence file, A_Wt.fastq.gz, found in the subfolder `dm-practices/7-repository-submission/data/`, available for download at [https://doi.org/10.17044/scilifelab.14301317](https://doi.org/10.17044/scilifelab.14301317).
+> * This exercise requires a sequence file, A_Wt.fastq.gz, found in the subfolder `dm-practices/7-repository-submission/data/`, available for download at [https://doi.org/10.17044/scilifelab.14301317](https://doi.org/10.17044/scilifelab.14301317).
 >
 > * In the folder `dm-practices/7-repository-submission/`, create a subfolder named `prg`, (i.e. `Desktop/dm-practices/7-repository-submission/prg`).
 > 
@@ -29,7 +29,7 @@ keypoints:
 >
 {: .prereq}
 
-## Do a submission to ENA using Webin-CLI
+## (Optional) Do a submission to ENA using Webin-CLI
 * Webin command line submission interface allows for automatic validation. Unlike other ENA submission routes, you do not need to pre-upload your files when using Webin-CLI.
 
 * Use the test submission site when you want to test, and the production site for real submissions:
@@ -50,46 +50,50 @@ keypoints:
 
   ![webin-login](../fig/webin-login.jpg)
 
-* On the Dashboard, click on Register Study (project)
+  To the left, in the top of the welcome page, there is a dashboard menu which will expand when you click on it. 
 
-  > ## Picture Dashboard Study
-  > ![dashboard-study](../fig/dashboard-study.jpg)
-  {: .solution}
+  ![dashboard](../fig/dashboard.jpg)
 
-* Enter the following information
-    * **Release date**: 29-Dec-2021
+  #### [Register study (project)](https://ena-docs.readthedocs.io/en/latest/submit/study/interactive.html) 
+  * Click on the Dashboard menu and select **Register Study (Project)**
+
+    > ## Picture
+    > ![dashboard-register-study](../fig/dashboard-register-study.jpg)
+    {: .solution}
+
+  * Enter the following information
+    * **Release date**: 10-Oct-2022
     * **Short descriptive study title**: VEGFR2 Y949F mutation
-    * **Study name**: VEGFR2
+    * **Study Name**: VEGFR2
     * **Detailed study abstract**: RNA sequencing of lung tissue from transgenic mice in order to investigate the effect of a single tyrosine to phenylalanine exchange in the endothelial receptor VEGFR2 at position Y949.
-* Click on **Save**
-* Note down the accession number (starts with PRJEB) displayed in the pop-up window, and click OK.
+  * Click on **Submit**
+  * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
 
-  > ## Solution
-  > ![webin-register-study](../fig/webin-register-study.jpg)
-  {: .solution}
-* On the Dashboard, click on Register Samples
-
-  > ## Picture Dashboard Samples
-  > ![dashboard-sample](../fig/dashboard-sample.jpg)
+    > ## Solution
+    > ![register-study](../fig/register-study.jpg)
   {: .solution}
 
-* There are two ways to submit samples, either from scratch via `Download spreadsheet to register samples` or via `Upload filled spreadsheet to register samples`. 
+  #### [Register samples](https://ena-docs.readthedocs.io/en/latest/submit/samples/interactive.html) 
+  * Click on the Dashboard menu and select **Register Samples**
+    > ## Picture
+    > ![dashboard-register-samples](../fig/dashboard-register-samples.jpg)
+    {: .solution}
 
-  > ## Picture Sample Choice
-  > ![webin-sample-choice](../fig/webin-sample-choice.jpg)
-  {: .solution}
+  * This will lead to two options, either download a spreadsheet to register samples or the reverse i.e. upload a filled spreadsheet. Typically you do not have a spreadsheet to begin with, but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and select the upload option.
 
-* Normally you do not have a spreadsheet to begin with but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and click on `Upload filled spreadsheet to register samples`. 
+    > ## Picture
+    > ![sample-submission-choice](../fig/sample-submission-choice.jpg)
+    {: .solution}
 
-* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (or, if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
+  * Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (or, if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
 
-* Click on **Submit Completed Spreadsheet**
+  * Click on **Submit Completed Spreadsheet**. 
 
-* Click OK in the pop-up window
+  * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
 
-  > ## Picture Sample Submit
-  > ![webin-sample-submit](../fig/webin-sample-submit.jpg)
-  {: .solution}
+    > ## Picture
+    > ![sample-submission-submit](../fig/sample-submission-submit.jpg)
+    {: .solution}
 
 ### 2. [Prepare manifest file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-2-prepare-the-files)
 
@@ -98,9 +102,7 @@ keypoints:
   * Field name (first column): case insensitive field name
   * Field value (second column): field value  
 
-
 * The following metadata fields are supported in the manifest file:
-
   * STUDY: Study accession or unique name (alias)
   * SAMPLE: Sample accession or unique name (alias)
   * NAME: Unique experiment name
@@ -113,13 +115,10 @@ keypoints:
   * LIBRARY_STRATEGY: [See permitted values](https://ena-docs.readthedocs.io/en/latest/submit/reads/webin-cli.html#strategy)
   * DESCRIPTION: free text library description (optional)
 
-
 * The following file name fields are supported in the manifest file:
-
   * BAM: Single BAM file
   * CRAM: Single CRAM file
   * FASTQ: Single fastq file
-
 
 * In a text editor such as Notepad, create a manifest file for the A_Wt sequence file, write the following information:  
   >   STUDY     
@@ -131,23 +130,23 @@ keypoints:
       FASTQ A_Wt.fastq.gz  
 
   The field values for STUDY and SAMPLE needs to be collected from your submission:
-* In the browser where you submitted the study and samples, go to the Dashboard and click on the `Studies Report`
-  > ## Picture Dashboard Studies Report
-  > ![webin-study-report](../fig/webin-study-report.jpg)
-  {: .solution}
+  * In the browser, where you submitted the study and samples, go to the Dashboard menu and click on the `Studies Report`
+    > ## Picture Dashboard Studies Report
+    > ![study-report](../fig/study-report.jpg)
+    {: .solution}
 
-* Copy the accession number (starting with PRJEB) into the manifest file as the STUDY field value.
-* Go back to the Dashboard and click on the `Samples report`
-  > ## Picture Dashboard Samples Report
-  > ![webin-sample-report](../fig/webin-sample-report.jpg)
-  {: .solution}
+  * Copy the accession number (starting with PRJEB) into the manifest file as the STUDY field value.
+  * Go back to the Dashboard menu and click on the `Samples report`
+    > ## Picture Dashboard Samples Report
+    > ![samples-report](../fig/samples-report.jpg)
+    {: .solution}
 
-* Locate the accession number (starting with ERS) for wt_A and copy this into the manifest file as the SAMPLE field value.
-* Save the manifest file
+  * Locate the accession number (starting with ERS) for wt_A and copy this into the manifest file as the SAMPLE field value.
+  * Save the manifest file
 
-  > ## Solution
-  > See an example manifest file [here](../files/A_Wt_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
-  {: .solution}
+    > ## Solution
+    > See an example manifest file [here](../files/A_Wt_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
+    {: .solution}
 
 ### 3. [Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)
 

@@ -34,7 +34,7 @@ There are different types of data
 ### Types of repositories
 * Domain specific: 
     * Best choice if suitable, long-term plan, typically free of charge, maximum reach. 
-    * E.g. ENA, ArrayExpress
+    * E.g. ENA, ArrayExpress, PRIDE
 * General purpose: 
     * Second best, long-term plan, might cost (now or in future), good reach but less specific in metadata → more difficult for future users to judge if a dataset will be useful
     * E.g. Zenodo, Figshare, Dryad
