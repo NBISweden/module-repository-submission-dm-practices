@@ -1,7 +1,7 @@
 ---
 title: "Exercise - EBI Repository Wizard"
 teaching: 0
-exercises: 20
+exercises: 10
 questions:
 - "How can I find a suitable repository for my data?"
 objectives:
@@ -28,7 +28,7 @@ keypoints:
 * Either explore the wizard with the purpose of finding a suitable repository for one of your projects, or choose among the scenarios provided below. Which repository is recommended?
 
   * Genomics project with RNA sequences
-  * Crystal structure of a protein
+  * X-ray chrystollography structure of a protein
   * Gene expression data
   * Protein sequencing data
   * Proteomics project using mass spectrometry
@@ -36,7 +36,7 @@ keypoints:
 
   > ## Solution
   > * Genomics project with RNA sequences: [European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/submit) (DNA/RNA sequence -> no controlled access -> produced experimentally -> Other)
-  > * Crystal structure of a protein: [wwPDB OneDep](https://deposit-pdbe.wwpdb.org/deposition) (Structures -> X-ray chrystollography)
+  > * X-ray chrystollography structure of a protein: [wwPDB OneDep](https://deposit-pdbe.wwpdb.org/deposition) (Structures -> X-ray chrystollography)
   > * Microarray gene expression data: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/submit/overview.html) (Expression data -> no controlled access -> Microarray gene expression)
   > * Protein sequencing data: [UniProt SPIN](https://www.ebi.ac.uk/swissprot/Submissions/spin/) (Protein data -> no controlled access -> produced experimentally -> Protein sequencing)
   > * Proteomics project using mass spectrometry: [PRIDE](https://www.ebi.ac.uk/pride/markdownpage/submitdatapage) (Protein data -> no controlled access -> produced experimentally -> Mass spectrometry -> Proteomics)

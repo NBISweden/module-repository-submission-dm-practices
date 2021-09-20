@@ -10,9 +10,9 @@ objectives:
 keypoints:
 - "When in doubt on how to submit, go to the test submission site and do a test submission: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)"
 - "The steps of submission process are"
-- "* In the browser: Register study level information and samples"
-- "* Create manifest file(s) - envelope / metadata for sequence files"
-- "* Validate and upload manifest file(s) and sequence file(s)"
+  - "In the browser: Register study level information and samples"
+  - "Create manifest file(s) - envelope / metadata for sequence files"
+  - "Validate and upload manifest file(s) and sequence file(s)"
 - "The whole process of submission, from file upload to receiving an accession number takes time.  Do not do this late in the project, when publishers require that you publish datasets before review and deadline is 24 hours."
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
@@ -23,7 +23,7 @@ keypoints:
 > 
 > * Webin-CLI requires that you have Java installed before you can run it. You should have version 1.8 or newer, which can be [downloaded from Java](https://java.com/en/download/).
 >
-> * You will also need to download and install [Oracle JRE](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) (Java Runtime Environment).  
+> * You will also need to download and install a Java Runtime Environment (JRE) and we recommend Zulu Open JDK available at [https://www.azul.com/downloads/?package=jdk](https://www.azul.com/downloads/?package=jdk)
 > 
 > * Download Webin-CLI Java jar file from its [GitHub repository](https://github.com/enasequence/webin-cli/releases/latest), and put it in `dm-practices/7-repository-submission/prg/`.
 >
@@ -79,13 +79,13 @@ keypoints:
     > ![dashboard-register-samples](../fig/dashboard-register-samples.jpg)
     {: .solution}
 
-  * This will lead to two options, either download a spreadsheet to register samples or the reverse i.e. upload a filled spreadsheet. Typically you do not have a spreadsheet to begin with, but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and select the upload option.
+  * This will lead to two options, either download a spreadsheet to register samples or the reverse, i.e., upload a filled spreadsheet. Typically you do not have a spreadsheet to begin with, but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and select the upload option.
 
     > ## Picture
     > ![sample-submission-choice](../fig/sample-submission-choice.jpg)
     {: .solution}
 
-  * Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (or, if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
+  * Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
 
   * Click on **Submit Completed Spreadsheet**. 
 

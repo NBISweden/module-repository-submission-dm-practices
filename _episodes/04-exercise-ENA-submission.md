@@ -88,13 +88,13 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
   > ![dashboard-register-samples](../fig/dashboard-register-samples.jpg)
   {: .solution}
 
-* This will lead to two options, either download a spreadsheet to register samples or the reverse i.e. upload a filled spreadsheet. Typically you do not have a spreadsheet to begin with, but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and select the upload option.
+* This will lead to two options, either download a spreadsheet to register samples or the reverse, i.e., upload a filled spreadsheet. Typically you do not have a spreadsheet to begin with, but since we have produced one in the [OpenRefine module](https://nbisweden.github.io/module-openrefine-dm-practices/), we can skip ahead and select the upload option.
 
   > ## Picture
   > ![sample-submission-choice](../fig/sample-submission-choice.jpg)
   {: .solution}
 
-* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (or, if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
+* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
 
 * Click on **Submit Completed Spreadsheet**. 
 
@@ -104,26 +104,26 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
   > ![sample-submission-submit](../fig/sample-submission-submit.jpg)
   {: .solution}
 
-> ## Optional: Steps to submit samples from scratch
-> * From the Register Samples menu, select `Download spreadsheet to register samples`
-> * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
-> 
->   > ## Picture
->   > ![select-checklist](../fig/select-checklist.jpg)
->   {: .solution}
-> 
-> * Click on `Optional fields` and add the fields `sex`, `strain`, `sub_strain`, `dev_stage` and `tissue_type`. *Hint: Use the search functionality if you don't find the fields in the list.*
-> * In the [Metadata module](https://nbisweden.github.io/module-metadata-dm-practices/), we identified several ontology terms. However, there are no predefined fields for this type of metadata in the checklist so we need to add them ourselves via `Add custom fields`. Add three fields (click on the `+` sign between): `strain_id`, `dev_stage_id` and `tissue_type_id`. 
->
->   > ## Picture
->   > ![add-fields](../fig/add-fields.jpg)
->   {: .solution}
-> 
-> * Click on **Next** and then on **Download TSV template**. 
-> 
-> * Open the template in your favorite text editor, fill in all sample information, and then upload the file via `Dashboard > Register Samples > Upload filled spreadsheet to register samples`.
-> * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
-> {: .solution}
+  > ## Optional: Steps to submit samples from scratch
+  > * From the Register Samples menu, select `Download spreadsheet to register samples`
+  > * Select a checklist, for our purpose the `Other Checklists`> `ENA default sample checklist` is suitable.
+  > 
+  >   > ## Picture
+  >   > ![select-checklist](../fig/select-checklist.jpg)
+  >   {: .solution}
+  > 
+  > * Click on `Optional fields` and add the fields `sex`, `strain`, `sub_strain`, `dev_stage` and `tissue_type`. *Hint: Use the search functionality if you don't find the fields in the list.*
+  > * In the [Metadata module](https://nbisweden.github.io/module-metadata-dm-practices/), we identified several ontology terms. However, there are no predefined fields for this type of metadata in the checklist so we need to add them ourselves via `Add custom fields`. Add the three fields (click on the `+` sign between): `strain_id`, `dev_stage_id` and `tissue_type_id`. 
+  >
+  >   > ## Picture
+  >   > ![add-fields](../fig/add-fields.jpg)
+  >   {: .solution}
+  > 
+  > * Click on **Next** and then on **Download TSV template**. 
+  > 
+  > * Open the template in your favorite text editor, fill in all sample information, and then upload the file via `Dashboard > Register Samples > Upload filled spreadsheet to register samples`.
+  > * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
+  > {: .solution}
 
 ### 5. [Submit sequence reads and experiments](https://ena-docs.readthedocs.io/en/latest/submit/reads/interactive.html)
 * Click on the Dashboard menu and select **Submit Reads**
@@ -152,20 +152,20 @@ You must upload data files into your private Webin file upload area at EMBL-EBI 
 
 * Open the TSV template in a text editor or Excel. *Note: We will only submit one sequence file, not one per sample.*
   
-  The field values for STUDY and SAMPLE needs to be collected from your submission:
-* In the browser where you submitted the study and samples, go to the Dashboard menu and click on the `Studies Report`
-  > ## Picture Dashboard Studies Report
-  > ![study-report](../fig/study-report.jpg)
-  {: .solution}
+  The field values for STUDY and SAMPLE need to be collected from your submission:
+  * In the browser where you submitted the study and samples, go to the Dashboard menu and click on the `Studies Report`
+    > ## Picture Dashboard Studies Report
+    > ![study-report](../fig/study-report.jpg)
+    {: .solution}
 
-* Copy the accession number (starting with PRJEB) into the tsv file as the STUDY field value.
+  * Copy the accession number (starting with PRJEB) into the TSV file as the STUDY field value.
 
-* Go back to the Dashboard and click on the `Samples report`
-  > ## Picture Dashboard Samples Report
-  > ![samples-report](../fig/samples-report.jpg)
-  {: .solution}
+  * Go back to the Dashboard and click on the `Samples report`
+    > ## Picture Dashboard Samples Report
+    > ![samples-report](../fig/samples-report.jpg)
+    {: .solution}
 
-* Locate the accession number (starting with ERS) for Wt_A and copy this into the manifest file as the SAMPLE field value.
+  * Locate the accession number (starting with ERS) for Wt_A and copy this into the TSV file as the SAMPLE field value.
 
 * Fill in the following information in the template:
     * instrument_model - `Illumina HiSeq 2500`
