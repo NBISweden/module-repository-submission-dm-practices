@@ -9,10 +9,10 @@ objectives:
 - "Do a submission using the Webin Command Line Interface(Webin-CLI)"
 keypoints:
 - "When in doubt on how to submit, go to the test submission site and do a test submission: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)"
-- "The steps of submission process are"
-  - "In the browser: Register study level information and samples"
-  - "Create manifest file(s) - envelope / metadata for sequence files"
-  - "Validate and upload manifest file(s) and sequence file(s)"
+- "The steps of submission process are:  
+    1. In the browser: Register study level information and samples
+    2. Create manifest file(s) - envelope / metadata for sequence files
+    3. Validate and upload manifest file(s) and sequence file(s)"
 - "The whole process of submission, from file upload to receiving an accession number takes time.  Do not do this late in the project, when publishers require that you publish datasets before review and deadline is 24 hours."
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
@@ -120,7 +120,7 @@ keypoints:
   * CRAM: Single CRAM file
   * FASTQ: Single fastq file
 
-* In a text editor such as Notepad, create a manifest file for the A_Wt sequence file, write the following information:  
+* In a text editor such as Notepad, create a manifest file for the A_Wt sequence file (dm-practices/7-repository-submission/data/A_Wt_manifest.txt), write the following information:  
   >   STUDY     
       SAMPLE    
       INSTRUMENT  Illumina HiSeq 2500  
@@ -165,19 +165,19 @@ In order to use Webin-CLI we need to give instructions on who we are and what we
 
 Out of these, we will make use of the following options:
 
-`-context`: the submission type (genome, transcriptome, sequence or reads)  
-`-userName`: the Webin submission account name.  
-`-password`: the Webin submission account password.  
-`-manifest`: the manifest file name.  
-`-outputDir`: directory for output files.  
-`-inputDir`: input directory for files declared in manifest file.  
-`-validate`: validates the files defined in the manifest file.  
-`-submit`: validates and submits the files defined in the manifest file.  
-`-test`: use Webin test service instead of the production service. 
-Please note that the Webin upload area is shared between test and production services, and that test submission files will not be archived.  
-`-help`: detailed information about the different options.
+  `-context`: the submission type (genome, transcriptome, sequence or reads)  
+  `-userName`: the Webin submission account name.  
+  `-password`: the Webin submission account password.  
+  `-manifest`: the manifest file name.  
+  `-outputDir`: directory for output files.  
+  `-inputDir`: input directory for files declared in manifest file.  
+  `-validate`: validates the files defined in the manifest file.  
+  `-submit`: validates and submits the files defined in the manifest file.  
+  `-test`: use Webin test service instead of the production service. 
 
-* For more details about the command line options of Webin-CLI, please follow this link: [https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#command-line-options](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#command-line-options). 
+Please note that the Webin upload area is shared between test and production services, and that test submission files will not be archived.  
+
+For more details about the command line options of Webin-CLI, please follow this link: [https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#command-line-options](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#command-line-options). 
 
 First we will do a validation (-validate option) to the test server (-test option), using `data` folder as both input and output directory. 
 * Copy or type the command below, and replace the `Webin-XXX` and `myPassword` with your own webin username and password, respectively:
@@ -190,7 +190,7 @@ First we will do a validation (-validate option) to the test server (-test optio
 * If the validation is successful the last output row will read:  
   > INFO : The submission has been validated successfully.
 
-* When the validation is successful, it is time to do a submit instead of a validation (-submit option instead of -validate). We will still use the test server, and the same input and output directories as for the validation step. Try to write the command yourself or take a peak at the solution below.
+When the validation is successful, it is time to do a submit instead of a validation (-submit option instead of -validate). We will still use the test server, and the same input and output directories as for the validation step. Try to write the command yourself or take a peak at the solution below.
 
   > ## Solution
   >  Windows: `java -jar prg\webin-cli-3.4.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest A_Wt_manifest.txt -outputDir data -inputDir data -submit -test`
