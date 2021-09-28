@@ -159,6 +159,7 @@ keypoints:
 
 ### 5. [(Optional) Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)
 
+> ## Prerequisites
 > * A sequence file, [NEBNext_OAS_12.fastq.gz](../data/NEBNext_OAS_12.fastq.gz).
 > In order to submit sequence file(s), and accompanying metadata regarding the sequencing, you must install Webin-CLI:
 > * Webin-CLI requires that you have Java installed before you can run it. You should have version 1.8 or newer, which can be [downloaded from Java](https://java.com/en/download/).
