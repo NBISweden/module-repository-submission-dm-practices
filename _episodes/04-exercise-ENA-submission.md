@@ -89,20 +89,20 @@ keypoints:
 >   {: .solution}
 > 
 > * Click on Recommended fields and remove the following fields: `virus identifier`, `receipt date`, `definition for seropositive sample`, `serotype`, `host habitat`, `host behaviour`, and `isolation source non-host-associated`. 
-<!-- 
-> * In the [Metadata module](https://nbisweden.github.io/module-metadata-dm-practices/), we identified several ontology terms. However, there are no predefined fields for this type of metadata in the checklist so we need to add them ourselves via `Add custom fields`. Add the following fields (click on the `+` sign between): . 
->
->   > ## Picture
->   > ![add-fields](../fig/add-fields.jpg)
->   {: .solution}
--->
 > 
 > * Click on **Next** and then on **Download TSV template**. 
 > 
 > * Open the template in your favorite text editor, fill in all sample information, and then upload the file via `Dashboard > Register Samples > Upload filled spreadsheet to register samples`.
 > * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
-> {: .solution}
+{: .solution}
 
+<!-- 
+> * In the [Metadata module](https://nbisweden.github.io/module-metadata-dm-practices/), we identified several ontology terms. However, there are no predefined fields for this type of metadata in the checklist so we need to add them ourselves via `Add custom fields`. Add the following fields (click on the `+` sign between):  
+>
+>   > ## Picture
+>   > ![add-fields](../fig/add-fields.jpg)
+>   {: .solution}
+-->
 ### 4. [(Optional) Prepare manifest file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-2-prepare-the-files)
 
 * A manifest file serves as an envelope for the sequence file, and contains the metadata describing how the sequencing was done.
