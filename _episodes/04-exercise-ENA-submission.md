@@ -1,3 +1,4 @@
+---
 title: "Exercise - submission to ENA"
 teaching: 10
 exercises: 40
@@ -13,7 +14,7 @@ keypoints:
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
 > ## Prerequisites
-> This exercise requires a sample metadata spreadsheet previously created in the OpenRefine module, `ENA_samples_workshop_DM_practices.tsv, found in the subfolder `dm-practices/7-repository-submission/data/`.
+> This exercise requires a sample metadata spreadsheet previously created in the OpenRefine module, `[ENA_samples_workshop_DM_practices.tsv](../data/ENA_samples_workshop_DM_practices.tsv)`.
 >
 {: .prereq}
 
@@ -69,7 +70,7 @@ keypoints:
   > ![sample-submission-choice](../fig/sample-submission-choice.jpg)
   {: .solution}
 
-* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (if doing this excercise independent from previous course modules, download the file first from [here](../files/ENA_samples_workshop_DM_practices.tsv)).
+* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (if doing this excercise independent from previous course modules, download the file first from [here](../data/ENA_samples_workshop_DM_practices.tsv)).
 
 * Click on **Submit Completed Spreadsheet**. 
 
@@ -151,7 +152,7 @@ keypoints:
   * Save the manifest file
 
     > ## Solution
-    > See an example manifest file [here](../files/NEBNext_OAS_12_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
+    > See an example manifest file [here](../data/NEBNext_OAS_12_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
     {: .solution}
 
 ### 5. [(Optional) Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)
