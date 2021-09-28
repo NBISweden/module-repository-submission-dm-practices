@@ -14,7 +14,7 @@ keypoints:
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
 > ## Prerequisites
-> This exercise requires a sample metadata spreadsheet previously created in the OpenRefine module, `[ENA_samples_workshop_DM_practices.tsv](../data/ENA_samples_workshop_DM_practices.tsv)`.
+> This exercise requires a sample metadata spreadsheet previously created in the OpenRefine module, [`ENA_samples_workshop_DM_practices.tsv`](../data/ENA_samples_workshop_DM_practices.tsv).
 >
 {: .prereq}
 
@@ -152,12 +152,12 @@ keypoints:
   * Save the manifest file
 
     > ## Solution
-    > See an example manifest file [here](../data/NEBNext_OAS_12_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
+    > See example manifest file [NEBNext_OAS_12_manifest.txt](../data/NEBNext_OAS_12_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
     {: .solution}
 
 ### 5. [(Optional) Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)
 
-> * A sequence file, NEBNext_OAS_12.fastq.gz, found in the subfolder `dm-practices/7-repository-submission/data/`.
+> * A sequence file, [NEBNext_OAS_12.fastq.gz](../data/NEBNext_OAS_12.fastq.gz).
 > In order to submit sequence file(s), and accompanying metadata regarding the sequencing, you must install Webin-CLI:
 > * Webin-CLI requires that you have Java installed before you can run it. You should have version 1.8 or newer, which can be [downloaded from Java](https://java.com/en/download/).
 >

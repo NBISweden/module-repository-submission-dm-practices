@@ -17,6 +17,6 @@ The following 2 files need to be downloaded previous to the repository submissio
 1. A sequence file (fastq format) - NEBNext_OAS_12.fastq.gz
 2. A sample metadata spreadsheet previously created in the OpenRefine module - ENA_samples_workshop_DM_practices.tsv
 
-Both files are found in the subfolder `[data](./data/)`.
+Both files are found in the subfolder [`data`](./data/).
 
 {% include links.md %}
