@@ -18,8 +18,8 @@ keypoints:
 >
 {: .prereq}
 
-## (Optional) Do a submission to ENA using Webin-CLI
-* Webin command line submission interface allows for automatic validation. Unlike other ENA submission routes, you do not need to pre-upload your files when using Webin-CLI.
+## Do a submission to ENA
+* In this exercise you will do an interactive submission of your Study and Samples using the Webin submission portal. There is also an optional exercise where you will submit your sequence data using the command line submission interface Webin-CLI, which enables automatic validation.
 
 * Use the test submission site when you want to test, and the production site for real submissions:
     * Test site: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)
@@ -80,26 +80,28 @@ keypoints:
   > ![sample-submission-submit](../fig/sample-submission-submit.jpg)
   {: .solution}
 
-  > ## Optional: Steps to submit samples from scratch
-  > * From the Register Samples menu, select `Download spreadsheet to register samples`
-  > * Select a checklist, for our purpose the `Pathogens Checklists`> `ENA virus pathogen reporting standard checklist` is suitable.
-  > 
-  >   > ## Picture
-  >   > ![select-checklist](../fig/select-checklist.jpg)
-  >   {: .solution}
-  > 
-  > * Click on Recommended fields and remove the following fields: `virus identifier`, `receipt date`, `definition for seropositive sample`, `serotype`, `host habitat`, `host behaviour`, and `isolation source non-host-associated`. 
-  <!-- >> * In the [Metadata module](https://nbisweden.github.io/module-metadata-dm-practices/), we identified several ontology terms. However, there are no predefined fields for this type of metadata in the checklist so we need to add them ourselves via `Add custom fields`. Add the following fields (click on the `+` sign between): . 
-  >
-  >   > ## Picture
-  >   > ![add-fields](../fig/add-fields.jpg)
-  >   {: .solution} -->
-  > 
-  > * Click on **Next** and then on **Download TSV template**. 
-  > 
-  > * Open the template in your favorite text editor, fill in all sample information, and then upload the file via `Dashboard > Register Samples > Upload filled spreadsheet to register samples`.
-  > * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
-  > {: .solution}
+> ## Optional: Steps to submit samples from scratch
+> * From the Register Samples menu, select `Download spreadsheet to register samples`
+> * Select a checklist, for our purpose the `Pathogens Checklists`> `ENA virus pathogen reporting standard checklist` is suitable.
+> 
+>   > ## Picture
+>   > ![select-checklist](../fig/select-checklist.jpg)
+>   {: .solution}
+> 
+> * Click on Recommended fields and remove the following fields: `virus identifier`, `receipt date`, `definition for seropositive sample`, `serotype`, `host habitat`, `host behaviour`, and `isolation source non-host-associated`. 
+<!-- 
+> * In the [Metadata module](https://nbisweden.github.io/module-metadata-dm-practices/), we identified several ontology terms. However, there are no predefined fields for this type of metadata in the checklist so we need to add them ourselves via `Add custom fields`. Add the following fields (click on the `+` sign between): . 
+>
+>   > ## Picture
+>   > ![add-fields](../fig/add-fields.jpg)
+>   {: .solution}
+-->
+> 
+> * Click on **Next** and then on **Download TSV template**. 
+> 
+> * Open the template in your favorite text editor, fill in all sample information, and then upload the file via `Dashboard > Register Samples > Upload filled spreadsheet to register samples`.
+> * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
+> {: .solution}
 
 ### 4. [(Optional) Prepare manifest file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-2-prepare-the-files)
 
