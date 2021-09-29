@@ -224,3 +224,6 @@ The processing will take a while but since the validation was successful, it is 
 * [ENA webinar](https://www.ebi.ac.uk/training/online/course/european-nucleotide-archive-ena-introduction-webin) 
     * [ENA slides only](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/ena_webinar_slides_030419.pptx)
 * [ReadTheDocs tutorial](https://ena-docs.readthedocs.io/en/latest/)
+
+## References
+The data used in this exercise has been extracted from a project submitted to ENA: [https://www.ebi.ac.uk/ena/browser/view/PRJEB42601](https://www.ebi.ac.uk/ena/browser/view/PRJEB42601)
