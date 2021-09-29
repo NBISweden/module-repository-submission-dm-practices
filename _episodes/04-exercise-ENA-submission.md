@@ -19,7 +19,6 @@ keypoints:
 > You also need to create an account at European Nucleotide Archive:
 > * Go to [ENA submit homepage](https://www.ebi.ac.uk/ena/submit/webin/#)
 > * Click on **Register** and fill in the required details
->
 {: .prereq}
 
 ## Do a submission to ENA
@@ -217,7 +216,7 @@ When the validation is successful, it is time to do a submit instead of a valida
   > Mac: `java -jar prg/webin-cli-4.1.0.jar -context reads -userName Webin-XXXXX -password myPassword -manifest NEBNext_OAS_12_manifest.txt -outputDir data -inputDir data -submit -test`
   {: .solution}
 
-* The processing will take a while but since the validation was successful, it is only the upload of the sequence file that might misfire. Well done!
+The processing will take a while but since the validation was successful, it is only the upload of the sequence file that might misfire. Well done!
 
 ## ENA training material 
 * [Webin-CLI Video Guide](https://youtu.be/ChCsqoq-r-Y)
