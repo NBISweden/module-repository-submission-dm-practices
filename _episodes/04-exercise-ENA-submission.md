@@ -6,7 +6,7 @@ questions:
 - "I have my datasets, what is the submission process?"
 objectives:
 - "Explain the steps of submission to European Nucleotide Archive."
-- "Do a submission using the Webin Submission portal"
+- "Do a submission using the Webin Submissions Portal"
 keypoints:
 - "When in doubt on how to submit, go to the test submission site and do a test submission: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)"
 - "The submission process includes registration of study and samples via the browser. The sequences and their metadata is submitted via Webin-CLI, a command-line tool that allows for validation."
@@ -14,12 +14,16 @@ keypoints:
 - "If you ever are stuck, contact us data stewards at NBIS by sending an email to **[data@nbis.se](mailto:data@nbis.se)** or ask for a consultation via **[our homepage](https://nbis.se/support/supportform/index.php?form=consultation)**."
 ---
 > ## Prerequisites
-> This exercise requires a sample metadata spreadsheet previously created in the OpenRefine module, [`ENA_samples_workshop_DM_practices.tsv`](../data/ENA_samples_workshop_DM_practices.tsv).
+> This exercise requires a sample metadata spreadsheet previously created in the OpenRefine module, [`ENA_samples_workshop_DM_practices.tsv`](../data/ENA_samples_workshop_DM_practices.tsv). Create a folder on your desktop, e.g. `Desktop/dm-practices/data` and download the tsv file above by clicking on the link. 
+> 
+> You also need to create an account at European Nucleotide Archive:
+> * Go to [ENA submit homepage](https://www.ebi.ac.uk/ena/submit/webin/#)
+> * Click on **Register** and fill in the required details
 >
 {: .prereq}
 
 ## Do a submission to ENA
-* In this exercise you will do an interactive submission of your Study and Samples using the Webin submission portal. There is also an optional exercise where you will submit your sequence data using the command line submission interface Webin-CLI, which enables automatic validation.
+* In this exercise you will do an interactive submission of your Study and Samples using the Webin submissions portal. There is also an optional exercise where you will submit your sequence data using the command line submission interface Webin-CLI, which enables automatic validation.
 
 * Use the test submission site when you want to test, and the production site for real submissions:
     * Test site: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin)
@@ -27,15 +31,15 @@ keypoints:
     * *Note: The test service is restarted every night, any submissions made to the test service will be removed by the following day. Hence, do not start a test submission one day, and expect to continue the next day.*
 
 * Submission steps:
-    1. Login to the Webin Submission Portal
+    1. Login to the Webin Submissions Portal
     2. Register study - Provide study level information
     3. Register sample(s) - Provide sample metadata
     4. Create manifest file(s) - envelope / metadata for sequence files
     5. Validate and upload manifest file(s) and sequence file(s))
 
-### 1. Login to the Webin Submission Portal
+### 1. Login to the Webin Submissions Portal
 * Go to the test service: [https://wwwdev.ebi.ac.uk/ena/submit/webin](https://wwwdev.ebi.ac.uk/ena/submit/webin) and log in with your Webin username and password. 
-* The submission portal allows for interactive submission, and is the recommended way for registration of your Study and Samples. To the left, in the top of the welcome page, there is a dashboard menu which will expand when you click on it. 
+* The submissions portal allows for interactive submission, and is the recommended way for registration of your Study and Samples. To the left, in the top of the welcome page, there is a dashboard menu which will expand when you click on it. 
 
   ![dashboard](../fig/dashboard.jpg)
 
@@ -70,7 +74,7 @@ keypoints:
   > ![sample-submission-choice](../fig/sample-submission-choice.jpg)
   {: .solution}
 
-* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (if doing this excercise independent from previous course modules, download the file first from [here](../data/ENA_samples_workshop_DM_practices.tsv)).
+* Select the file `ENA_samples_workshop_DM_practices.tsv` from your computer (if you haven't previously, download the file first from [here](../data/ENA_samples_workshop_DM_practices.tsv)).
 
 * Click on **Submit Completed Spreadsheet**. 
 
@@ -81,19 +85,15 @@ keypoints:
   {: .solution}
 
 > ## Optional: Steps to submit samples from scratch
-> * From the Register Samples menu, select `Download spreadsheet to register samples`
-> * Select a checklist, for our purpose the `Pathogens Checklists`> `ENA virus pathogen reporting standard checklist` is suitable.
-> 
+> * From the Register Samples menu, select `Download spreadsheet to register samples`.
+> * Select a checklist, for our purpose the `Pathogens Checklists` > `ENA virus pathogen reporting standard checklist` is suitable.
 >   > ## Picture
 >   > ![select-checklist](../fig/select-checklist.jpg)
 >   {: .solution}
-> 
 > * Click on Recommended fields and remove the following fields: `virus identifier`, `receipt date`, `definition for seropositive sample`, `serotype`, `host habitat`, `host behaviour`, and `isolation source non-host-associated`. 
-> 
 > * Click on **Next** and then on **Download TSV template**. 
-> 
 > * Open the template in your favorite text editor, fill in all sample information, and then upload the file via `Dashboard > Register Samples > Upload filled spreadsheet to register samples`.
-> * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**
+> * Verify that the submission was successful in the pop-up **Submission** window, then click on **Close**.
 {: .solution}
 
 <!-- 
@@ -129,7 +129,7 @@ keypoints:
   * CRAM: Single CRAM file
   * FASTQ: Single fastq file
 
-* In a text editor such as Notepad, create a manifest file for the NEBNext_OAS_12 sequence file (dm-practices/7-repository-submission/data/NEBNext_OAS_12_manifest.txt), write the following information:  
+* In a text editor such as Notepad, create a manifest file for the NEBNext_OAS_12 sequence file and put it in the data folder (e.g. Desktop/dm-practices/data/NEBNext_OAS_12_manifest.txt), write the following information:  
   >   STUDY     
       SAMPLE    
       INSTRUMENT  NextSeq 500  
@@ -151,31 +151,29 @@ keypoints:
     {: .solution}
 
   * Locate the accession number (starting with ERS) for NEBNext_OAS_12 and copy this into the manifest file as the SAMPLE field value.
-  * Save the manifest file
 
-    > ## Solution
-    > See example manifest file [NEBNext_OAS_12_manifest.txt](../data/NEBNext_OAS_12_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
-    {: .solution}
+* Save the manifest file.
+
+> ## Solution
+> See example manifest file [NEBNext_OAS_12_manifest.txt](../data/NEBNext_OAS_12_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
+{: .solution}
 
 ### 5. [(Optional) Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)
 
 > ## Prerequisites
-> * A sequence file, [NEBNext_OAS_12.fastq.gz](../data/NEBNext_OAS_12.fastq.gz).
+> * A sequence file is required: [NEBNext_OAS_12.fastq.gz](../data/NEBNext_OAS_12.fastq.gz), download it to you data folder (e.g. Desktop/dm-practices/data/).
 > In order to submit sequence file(s), and accompanying metadata regarding the sequencing, you must install Webin-CLI:
 > * Webin-CLI requires that you have Java installed before you can run it. You should have version 1.8 or newer, which can be [downloaded from Java](https://java.com/en/download/).
->
 > * You will also need to download and install a Java Runtime Environment (JRE) and we recommend Zulu Open JDK available at [https://www.azul.com/downloads/?package=jdk](https://www.azul.com/downloads/?package=jdk)
-> 
-> * In the folder `dm-practices/7-repository-submission/`, create a subfolder named `prg`, (i.e. `Desktop/dm-practices/7-repository-submission/prg`).
-> 
-> * Download Webin-CLI Java jar file from its [GitHub repository](https://github.com/enasequence/webin-cli/releases/latest), and put it in `dm-practices/7-repository-submission/prg/`.
+> * In the folder where you created the data subfolder, create another subfolder named `prg`, (e.g. `Desktop/dm-practices/prg`).
+> * Download Webin-CLI Java jar file from its [GitHub repository](https://github.com/enasequence/webin-cli/releases/latest), and put it in the `prg` subfolder.
 {: .prereq}
 
-Open the Command Prompt window and go to the folder `dm-practices/7-repository-submission/` on your Desktop using the command `cd Desktop\dm-practices\7-repository-submission`.
+Open the Command Prompt window and go to the folder `dm-practices` on your Desktop using the command `cd Desktop\dm-practices\`.
 
 ![cmd-cd](../fig/cmd-cd.jpg)
 
-* *Note for **Mac** users: Please use forward slash, i.e. write the command `cd Desktop/dm-practices/7-repository-submission/`* 
+* *Note for **Mac** users: Please use forward slash, i.e. write the command `cd Desktop/dm-practices/`* 
 
 In order to use Webin-CLI we need to give instructions on who we are and what we want to do. This is done using `options`:
 
