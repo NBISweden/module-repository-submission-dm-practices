@@ -154,7 +154,7 @@ keypoints:
 * Save the manifest file.
 
 > ## Solution
-> See example manifest file [NEBNext_OAS_12_manifest.txt](../data/NEBNext_OAS_12_manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
+> See example manifest file [NEBNext_OAS_12_manifest.txt](../data/NEBNext_OAS_12.manifest.txt) but note that STUDY and SAMPLE have no field values since this is unique to each study and sample submission and needs to be entered manually.
 {: .solution}
 
 ### 5. [(Optional) Validate and submit the manifest file and the sequence file](https://ena-docs.readthedocs.io/en/latest/submit/general-guide/webin-cli.html#stage-3-validate-and-submit-files)

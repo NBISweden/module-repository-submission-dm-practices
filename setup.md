@@ -2,7 +2,7 @@
 title: Setup
 ---
 ## Presentation slides
-* Download the [presentation slides](/files/module-repository-submission-dm-practice.pdf)
+* Download the [presentation slides](/files/module-repository-submission-dm-practices.pdf)
 
 ## Account at European Nucleotide Archive
 
