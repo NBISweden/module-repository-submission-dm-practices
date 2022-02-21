@@ -1,0 +1,19 @@
+contentUrl	license
+fig/wizard-home.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/metadata_model.png	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/dashboard.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/dashboard-register-study.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/register-study-sarscov2.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/dashboard-register-samples.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/sample-submission-choice.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/sample-submission-submit.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/select-checklist.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/add-fields.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/study-report.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/samples-report.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+fig/cmd-cd.jpg	Screenshot by NBIS of the ENA Webin submissions portal by EMBL-EBI, https://www.ebi.ac.uk/about/terms-of-use/
+data/ENA_samples_workshop_DM_practices.tsv	Artificial data created by NBIS derived from publicaly available research data deposited in the European Nucleotide Archive (ENA) at EMBL-EBI under accession number PRJEB42601 (https://identifiers.org/ena.embl:PRJEB42601).
+data/NEBNext_OAS_12.fastq.gz	Artificial data created by NBIS derived from publicaly available research data deposited in the European Nucleotide Archive (ENA) at EMBL-EBI under accession number PRJEB42601 (https://identifiers.org/ena.embl:PRJEB42601).
+data/NEBNext_OAS_12_manifest.txt	Artificial data created by NBIS derived from publicaly available research data deposited in the European Nucleotide Archive (ENA) at EMBL-EBI under accession number PRJEB42601 (https://identifiers.org/ena.embl:PRJEB42601).
+files/module-dmp-dm-practice.pdf	Presentation CC BY 4.0 by NBIS, https://creativecommons.org/licenses/by/4.0/
+files/module-repository-submission-dm-practices.pdf	Presentation CC BY 4.0 by NBIS, https://creativecommons.org/licenses/by/4.0/
